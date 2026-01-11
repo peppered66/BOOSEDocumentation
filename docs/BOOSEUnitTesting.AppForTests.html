@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class AppForTests | mysite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class AppForTests | mysite ">
+      
+      <meta name="description" content="Unit tests for . Validates syntax checking, auto-variable creation, compile-time type validation, execution behaviour across iterations, and step handling.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/new/main/apiSpec/new?filename=BOOSEUnitTesting_AppForTests.md&amp;value=---%0Auid%3A%20BOOSEUnitTesting.AppForTests%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="mysite">
+            mysite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="BOOSEUnitTesting.AppForTests">
+
+
+
+  <h1 id="BOOSEUnitTesting_AppForTests" data-uid="BOOSEUnitTesting.AppForTests" class="text-break">
+Class AppForTests  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/AppForTests.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="BOOSEUnitTesting.html">BOOSEUnitTesting</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BOOSEUnitTesting.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Unit tests for <a class="xref" href="BOOSE_App.AppFor.html">AppFor</a>.
+Validates syntax checking, auto-variable creation, compile-time type validation,
+execution behaviour across iterations, and step handling.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestClass]
+public class AppForTests : TestBase</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="BOOSEUnitTesting.TestBase.html">TestBase</a></div>
+      <div><span class="xref">AppForTests</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="BOOSEUnitTesting.TestBase.html#BOOSEUnitTesting_TestBase_Program">TestBase.Program</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSEUnitTesting.TestBase.html#BOOSEUnitTesting_TestBase_Canvas">TestBase.Canvas</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSEUnitTesting.TestBase.html#BOOSEUnitTesting_TestBase_BaseSetup">TestBase.BaseSetup()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="BOOSEUnitTesting_AppForTests_CheckParameters_WhenInvalidSyntax_ThrowsParserException_" data-uid="BOOSEUnitTesting.AppForTests.CheckParameters_WhenInvalidSyntax_ThrowsParserException*"></a>
+
+  <h3 id="BOOSEUnitTesting_AppForTests_CheckParameters_WhenInvalidSyntax_ThrowsParserException" data-uid="BOOSEUnitTesting.AppForTests.CheckParameters_WhenInvalidSyntax_ThrowsParserException">
+  CheckParameters_WhenInvalidSyntax_ThrowsParserException()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/AppForTests.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ensures invalid FOR parameter counts/syntax throw <span class="xref">BOOSE.ParserException</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void CheckParameters_WhenInvalidSyntax_ThrowsParserException()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEUnitTesting_AppForTests_Compile_WhenVariableIsNotInt_ThrowsParserException_" data-uid="BOOSEUnitTesting.AppForTests.Compile_WhenVariableIsNotInt_ThrowsParserException*"></a>
+
+  <h3 id="BOOSEUnitTesting_AppForTests_Compile_WhenVariableIsNotInt_ThrowsParserException" data-uid="BOOSEUnitTesting.AppForTests.Compile_WhenVariableIsNotInt_ThrowsParserException">
+  Compile_WhenVariableIsNotInt_ThrowsParserException()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/AppForTests.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies compile fails if loop variable is not an integer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Compile_WhenVariableIsNotInt_ThrowsParserException()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEUnitTesting_AppForTests_Execute_FirstIteration_SetsStartValue_" data-uid="BOOSEUnitTesting.AppForTests.Execute_FirstIteration_SetsStartValue*"></a>
+
+  <h3 id="BOOSEUnitTesting_AppForTests_Execute_FirstIteration_SetsStartValue" data-uid="BOOSEUnitTesting.AppForTests.Execute_FirstIteration_SetsStartValue">
+  Execute_FirstIteration_SetsStartValue()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/AppForTests.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies first execution initializes loop variable to the start value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Execute_FirstIteration_SetsStartValue()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEUnitTesting_AppForTests_Execute_SubsequentIteration_IncrementsByStep_" data-uid="BOOSEUnitTesting.AppForTests.Execute_SubsequentIteration_IncrementsByStep*"></a>
+
+  <h3 id="BOOSEUnitTesting_AppForTests_Execute_SubsequentIteration_IncrementsByStep" data-uid="BOOSEUnitTesting.AppForTests.Execute_SubsequentIteration_IncrementsByStep">
+  Execute_SubsequentIteration_IncrementsByStep()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/AppForTests.cs/#L93"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies subsequent executions increment the loop variable by the step value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Execute_SubsequentIteration_IncrementsByStep()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEUnitTesting_AppForTests_Execute_WhenLoopExits_NegativeStep_AdvancesPastEndValue_" data-uid="BOOSEUnitTesting.AppForTests.Execute_WhenLoopExits_NegativeStep_AdvancesPastEndValue*"></a>
+
+  <h3 id="BOOSEUnitTesting_AppForTests_Execute_WhenLoopExits_NegativeStep_AdvancesPastEndValue" data-uid="BOOSEUnitTesting.AppForTests.Execute_WhenLoopExits_NegativeStep_AdvancesPastEndValue">
+  Execute_WhenLoopExits_NegativeStep_AdvancesPastEndValue()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/AppForTests.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ensures the loop completes when it passes the end bound (negative step).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Execute_WhenLoopExits_NegativeStep_AdvancesPastEndValue()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEUnitTesting_AppForTests_Execute_WhenLoopExits_PositiveStep_AdvancesPastEndValue_" data-uid="BOOSEUnitTesting.AppForTests.Execute_WhenLoopExits_PositiveStep_AdvancesPastEndValue*"></a>
+
+  <h3 id="BOOSEUnitTesting_AppForTests_Execute_WhenLoopExits_PositiveStep_AdvancesPastEndValue" data-uid="BOOSEUnitTesting.AppForTests.Execute_WhenLoopExits_PositiveStep_AdvancesPastEndValue">
+  Execute_WhenLoopExits_PositiveStep_AdvancesPastEndValue()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/AppForTests.cs/#L134"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ensures the loop completes when it passes the end bound (positive step).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Execute_WhenLoopExits_PositiveStep_AdvancesPastEndValue()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h4 class="section" id="BOOSEUnitTesting_AppForTests_Execute_WhenLoopExits_PositiveStep_AdvancesPastEndValue_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>In unit tests we do not assert on <span class="xref">BOOSE.StoredProgram.PC</span> because that is controlled
+by the program runner. Instead we assert that the loop advances past the end value and
+marks itself as started.</p>
+</div>
+
+
+
+
+  <a id="BOOSEUnitTesting_AppForTests_Execute_WhenStepIsZero_ThrowsCommandException_" data-uid="BOOSEUnitTesting.AppForTests.Execute_WhenStepIsZero_ThrowsCommandException*"></a>
+
+  <h3 id="BOOSEUnitTesting_AppForTests_Execute_WhenStepIsZero_ThrowsCommandException" data-uid="BOOSEUnitTesting.AppForTests.Execute_WhenStepIsZero_ThrowsCommandException">
+  Execute_WhenStepIsZero_ThrowsCommandException()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/AppForTests.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ensures step of zero throws <span class="xref">BOOSE.CommandException</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Execute_WhenStepIsZero_ThrowsCommandException()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEUnitTesting_AppForTests_Set_WhenVariableDoesNotExist_AutoCreatesIntVariable_" data-uid="BOOSEUnitTesting.AppForTests.Set_WhenVariableDoesNotExist_AutoCreatesIntVariable*"></a>
+
+  <h3 id="BOOSEUnitTesting_AppForTests_Set_WhenVariableDoesNotExist_AutoCreatesIntVariable" data-uid="BOOSEUnitTesting.AppForTests.Set_WhenVariableDoesNotExist_AutoCreatesIntVariable">
+  Set_WhenVariableDoesNotExist_AutoCreatesIntVariable()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/AppForTests.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ensures a FOR loop auto-creates its control variable if missing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Set_WhenVariableDoesNotExist_AutoCreatesIntVariable()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/AppForTests.cs/#L12" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

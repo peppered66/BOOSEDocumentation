@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class RectangleCommand | mysite ">
       
-      <meta name="description" content="Command class for drawing rectangles onto canvas at current pen position.">
+      <meta name="description" content="Command class for drawing rectangles onto canvas at current pen position. Bypasses BOOSE restrictions.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="BOOSE_App_RectangleCommand" data-uid="BOOSE_App.RectangleCommand" class="text-break">
-Class RectangleCommand  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/RectangleCommand.cs/#L13"><i class="bi bi-code-slash"></i></a>
+Class RectangleCommand  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/RectangleCommand.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -98,7 +98,7 @@ Class RectangleCommand  <a class="header-action link-secondary" title="View sour
   </div>
 
   <div class="markdown summary"><p>Command class for drawing rectangles onto canvas
-at current pen position.</p>
+at current pen position. Bypasses BOOSE restrictions.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -154,6 +154,10 @@ at current pen position.</p>
 
 
 
+  <h2 id="BOOSE_App_RectangleCommand_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Width and height parameters are captured as strings during parsing so they
+can be evaluated at runtime. The actual drawing is performed by <a class="xref" href="BOOSE_App.AppCanvas.html#BOOSE_App_AppCanvas_Rect_System_Int32_System_Int32_System_Boolean_">Rect(int, int, bool)</a>.</p>
+</div>
 
 
   <h2 class="section" id="constructors">Constructors
@@ -164,7 +168,7 @@ at current pen position.</p>
 
   <h3 id="BOOSE_App_RectangleCommand__ctor_BOOSE_App_AppCanvas_" data-uid="BOOSE_App.RectangleCommand.#ctor(BOOSE_App.AppCanvas)">
   RectangleCommand(AppCanvas)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/RectangleCommand.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/RectangleCommand.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Constructor for command that sets
@@ -201,7 +205,7 @@ up canvas for drawing.</p>
 
   <h3 id="BOOSE_App_RectangleCommand_canvas" data-uid="BOOSE_App.RectangleCommand.canvas">
   canvas
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/RectangleCommand.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/RectangleCommand.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Canvas that will be drawn onto.</p>
@@ -232,11 +236,10 @@ up canvas for drawing.</p>
 
   <h3 id="BOOSE_App_RectangleCommand_filled" data-uid="BOOSE_App.RectangleCommand.filled">
   filled
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/RectangleCommand.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/RectangleCommand.cs/#L42"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Determines whether rectangle
-is filled or not</p>
+  <div class="markdown level1 summary"><p>Determines whether rectangle is filled or not.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -264,11 +267,10 @@ is filled or not</p>
 
   <h3 id="BOOSE_App_RectangleCommand_height" data-uid="BOOSE_App.RectangleCommand.height">
   height
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/RectangleCommand.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/RectangleCommand.cs/#L32"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Height and width parameters
-of rectangle to be drawn.</p>
+  <div class="markdown level1 summary"><p>Height and width parameters of rectangle to be drawn set during execution.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -294,12 +296,43 @@ of rectangle to be drawn.</p>
 
 
 
-  <h3 id="BOOSE_App_RectangleCommand_program" data-uid="BOOSE_App.RectangleCommand.program">
-  program
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/RectangleCommand.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BOOSE_App_RectangleCommand_heightParam" data-uid="BOOSE_App.RectangleCommand.heightParam">
+  heightParam
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/RectangleCommand.cs/#L37"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Stored command from parser for execution.</p>
+  <div class="markdown level1 summary"><p>Height and width parameters passed by the parser for evaluation during execute method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string heightParam</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="BOOSE_App_RectangleCommand_program" data-uid="BOOSE_App.RectangleCommand.program">
+  program
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/RectangleCommand.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stored commands from parser for execution.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -327,11 +360,10 @@ of rectangle to be drawn.</p>
 
   <h3 id="BOOSE_App_RectangleCommand_width" data-uid="BOOSE_App.RectangleCommand.width">
   width
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/RectangleCommand.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/RectangleCommand.cs/#L32"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Height and width parameters
-of rectangle to be drawn.</p>
+  <div class="markdown level1 summary"><p>Height and width parameters of rectangle to be drawn set during execution.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -356,6 +388,37 @@ of rectangle to be drawn.</p>
 
 
 
+
+  <h3 id="BOOSE_App_RectangleCommand_widthParam" data-uid="BOOSE_App.RectangleCommand.widthParam">
+  widthParam
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/RectangleCommand.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Height and width parameters passed by the parser for evaluation during execute method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string widthParam</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
 
@@ -364,10 +427,10 @@ of rectangle to be drawn.</p>
 
   <h3 id="BOOSE_App_RectangleCommand_CheckParameters_System_String___" data-uid="BOOSE_App.RectangleCommand.CheckParameters(System.String[])">
   CheckParameters(string[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/RectangleCommand.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/RectangleCommand.cs/#L61"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Checks command parameters are valid.</p>
+  <div class="markdown level1 summary"><p>Checks command has correct amount of parameters.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -393,13 +456,7 @@ of rectangle to be drawn.</p>
   <h4 class="section">Exceptions</h4>
   <dl class="parameters">
     <dt><span class="xref">ParserException</span></dt>
-    <dd><p>Thrown if there is not two parameters as
-required. Also thrown if parameter values are
-not integers.</p>
-</dd>
-    <dt><span class="xref">CommandException</span></dt>
-    <dd><p>Thrown if height or width parameters
-are invalid integer that can't be drawn.</p>
+    <dd><p>Thrown is there is not two parameters stored as expected.</p>
 </dd>
   </dl>
 
@@ -409,10 +466,10 @@ are invalid integer that can't be drawn.</p>
 
   <h3 id="BOOSE_App_RectangleCommand_Compile" data-uid="BOOSE_App.RectangleCommand.Compile">
   Compile()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/RectangleCommand.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/RectangleCommand.cs/#L77"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Method not implemented.</p>
+  <div class="markdown level1 summary"><p>Validates parameter during compilation if raw integer is passed (expressions are validated during execution).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -428,7 +485,17 @@ are invalid integer that can't be drawn.</p>
 
 
 
+  <h4 class="section" id="BOOSE_App_RectangleCommand_Compile_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If either parameter is an expression or variable reference, full
+validation is deferred until <a class="xref" href="BOOSE_App.RectangleCommand.html#BOOSE_App_RectangleCommand_Execute">Execute()</a>.</p>
+</div>
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ParserException</span></dt>
+    <dd><p>Thrown if a literal width or height value is less than zero.</p>
+</dd>
+  </dl>
 
 
 
@@ -436,10 +503,11 @@ are invalid integer that can't be drawn.</p>
 
   <h3 id="BOOSE_App_RectangleCommand_Execute" data-uid="BOOSE_App.RectangleCommand.Execute">
   Execute()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/RectangleCommand.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/RectangleCommand.cs/#L95"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Executes rectangle command.</p>
+  <div class="markdown level1 summary"><p>Executes rectangle command by calling canvas method to draw after
+handling parameter arguments passed by parser.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -456,11 +524,16 @@ are invalid integer that can't be drawn.</p>
 
 
   <h4 class="section" id="BOOSE_App_RectangleCommand_Execute_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>Calls rect method from canvas using
-parsed parameters. Ignores restrictions
-implemented by BOOSE.</p>
+  <div class="markdown level1 remarks"><p>If  the parameters are literal integers they are used directly. Otherwise
+they are evaluted using <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">EvaluateExpression(string)</a>.</p>
 </div>
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">CommandException</span></dt>
+    <dd><p>Thrown if value is less than one being invalid for drawing.</p>
+</dd>
+  </dl>
 
 
 
@@ -468,10 +541,11 @@ implemented by BOOSE.</p>
 
   <h3 id="BOOSE_App_RectangleCommand_Set_BOOSE_StoredProgram_System_String_" data-uid="BOOSE_App.RectangleCommand.Set(BOOSE.StoredProgram,System.String)">
   Set(StoredProgram, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/RectangleCommand.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/RectangleCommand.cs/#L137"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Sets command parameters.</p>
+  <div class="markdown level1 summary"><p>Recieves raw parser input then sorts it into a command and it's
+parameters. Validates parameter count by running checkParameters method.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -504,7 +578,7 @@ implemented by BOOSE.</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/RectangleCommand.cs/#L13" class="edit-link">Edit this page</a>
+          <a href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/RectangleCommand.cs/#L17" class="edit-link">Edit this page</a>
         </div>
 
 

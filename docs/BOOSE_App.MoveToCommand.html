@@ -163,7 +163,7 @@ Class MoveToCommand  <a class="header-action link-secondary" title="View source"
 
   <h3 id="BOOSE_App_MoveToCommand__ctor_BOOSE_App_AppCanvas_" data-uid="BOOSE_App.MoveToCommand.#ctor(BOOSE_App.AppCanvas)">
   MoveToCommand(AppCanvas)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/MoveToCommand.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/MoveToCommand.cs/#L36"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Constructor for moveto command
@@ -290,6 +290,37 @@ sets up canvas.</p>
 
 
 
+  <h3 id="BOOSE_App_MoveToCommand_xParam" data-uid="BOOSE_App.MoveToCommand.xParam">
+  xParam
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/MoveToCommand.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>X and Y coordinate parameters passed by the parser for evaluation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string xParam</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
   <h3 id="BOOSE_App_MoveToCommand_y" data-uid="BOOSE_App.MoveToCommand.y">
   y
   <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/MoveToCommand.cs/#L26"><i class="bi bi-code-slash"></i></a>
@@ -320,6 +351,37 @@ sets up canvas.</p>
 
 
 
+
+  <h3 id="BOOSE_App_MoveToCommand_yParam" data-uid="BOOSE_App.MoveToCommand.yParam">
+  yParam
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/MoveToCommand.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>X and Y coordinate parameters passed by the parser for evaluation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string yParam</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
 
@@ -328,7 +390,7 @@ sets up canvas.</p>
 
   <h3 id="BOOSE_App_MoveToCommand_CheckParameters_System_String___" data-uid="BOOSE_App.MoveToCommand.CheckParameters(System.String[])">
   CheckParameters(string[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/MoveToCommand.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/MoveToCommand.cs/#L50"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Checks command parameters are valid.</p>
@@ -369,10 +431,10 @@ are not integers.</p>
 
   <h3 id="BOOSE_App_MoveToCommand_Compile" data-uid="BOOSE_App.MoveToCommand.Compile">
   Compile()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/MoveToCommand.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/MoveToCommand.cs/#L63"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Method not implemented.</p>
+  <div class="markdown level1 summary"><p>Validates parameters at compile time when literal integers are provided.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -388,7 +450,17 @@ are not integers.</p>
 
 
 
+  <h4 class="section" id="BOOSE_App_MoveToCommand_Compile_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If either parameter is an expression or variable reference, full validation is deferred until
+<a class="xref" href="BOOSE_App.MoveToCommand.html#BOOSE_App_MoveToCommand_Execute">Execute()</a>.</p>
+</div>
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ParserException</span></dt>
+    <dd><p>Thrown if a literal X or Y value is negative.</p>
+</dd>
+  </dl>
 
 
 
@@ -396,10 +468,10 @@ are not integers.</p>
 
   <h3 id="BOOSE_App_MoveToCommand_Execute" data-uid="BOOSE_App.MoveToCommand.Execute">
   Execute()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/MoveToCommand.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/MoveToCommand.cs/#L81"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Executes moveto command.</p>
+  <div class="markdown level1 summary"><p>Executes the command by resolving X and Y values and moving the pen to the target coordinate.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -416,10 +488,16 @@ are not integers.</p>
 
 
   <h4 class="section" id="BOOSE_App_MoveToCommand_Execute_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>Calls moveto method from canvas
-using command parameters.</p>
+  <div class="markdown level1 remarks"><p>If a parameter is a literal integer it is used directly; otherwise it is evaluated using
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">EvaluateExpressionWithString(string)</a> and parsed to an integer.</p>
 </div>
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">CommandException</span></dt>
+    <dd><p>Thrown if the resolved X or Y value is negative.</p>
+</dd>
+  </dl>
 
 
 
@@ -427,10 +505,11 @@ using command parameters.</p>
 
   <h3 id="BOOSE_App_MoveToCommand_Set_BOOSE_StoredProgram_System_String_" data-uid="BOOSE_App.MoveToCommand.Set(BOOSE.StoredProgram,System.String)">
   Set(StoredProgram, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/MoveToCommand.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/MoveToCommand.cs/#L122"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Sets command parameters.</p>
+  <div class="markdown level1 summary"><p>Recieves raw parser input then sorts it into a command and it's
+parameters. Validates parameter count by running checkParameters method.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 

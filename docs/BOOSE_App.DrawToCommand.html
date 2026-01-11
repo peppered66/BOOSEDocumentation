@@ -164,7 +164,7 @@ from current pen position.</p>
 
   <h3 id="BOOSE_App_DrawToCommand__ctor_BOOSE_App_AppCanvas_" data-uid="BOOSE_App.DrawToCommand.#ctor(BOOSE_App.AppCanvas)">
   DrawToCommand(AppCanvas)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/DrawToCommand.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/DrawToCommand.cs/#L42"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Constructor for command that
@@ -291,6 +291,37 @@ sets up canvas for drawing.</p>
 
 
 
+  <h3 id="BOOSE_App_DrawToCommand_xParam" data-uid="BOOSE_App.DrawToCommand.xParam">
+  xParam
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/DrawToCommand.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>X and Y coordinate parameters passed by the parser for evaluation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string xParam</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
   <h3 id="BOOSE_App_DrawToCommand_y" data-uid="BOOSE_App.DrawToCommand.y">
   y
   <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/DrawToCommand.cs/#L30"><i class="bi bi-code-slash"></i></a>
@@ -321,27 +352,26 @@ sets up canvas for drawing.</p>
 
 
 
-  <h2 class="section" id="methods">Methods
-</h2>
 
-
-  <a id="BOOSE_App_DrawToCommand_CheckParameters_" data-uid="BOOSE_App.DrawToCommand.CheckParameters*"></a>
-
-  <h3 id="BOOSE_App_DrawToCommand_CheckParameters_System_String___" data-uid="BOOSE_App.DrawToCommand.CheckParameters(System.String[])">
-  CheckParameters(string[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/DrawToCommand.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BOOSE_App_DrawToCommand_yParam" data-uid="BOOSE_App.DrawToCommand.yParam">
+  yParam
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/DrawToCommand.cs/#L35"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>X and Y coordinate parameters passed by the parser for evaluation.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void CheckParameters(string[] Parameters)</code></pre>
+    <pre><code class="lang-csharp hljs">public string yParam</code></pre>
   </div>
 
-  <h4 class="section">Parameters</h4>
+
+
+
+  <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><code>Parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
@@ -353,6 +383,46 @@ sets up canvas for drawing.</p>
 
 
 
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="BOOSE_App_DrawToCommand_CheckParameters_" data-uid="BOOSE_App.DrawToCommand.CheckParameters*"></a>
+
+  <h3 id="BOOSE_App_DrawToCommand_CheckParameters_System_String___" data-uid="BOOSE_App.DrawToCommand.CheckParameters(System.String[])">
+  CheckParameters(string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/DrawToCommand.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks command has correct amount of parameters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CheckParameters(string[] Parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p>Array containing command parameters.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ParserException</span></dt>
+    <dd><p>Thrown is there is not two parameters stored as expected.</p>
+</dd>
+  </dl>
 
 
 
@@ -360,10 +430,10 @@ sets up canvas for drawing.</p>
 
   <h3 id="BOOSE_App_DrawToCommand_Compile" data-uid="BOOSE_App.DrawToCommand.Compile">
   Compile()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/DrawToCommand.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/DrawToCommand.cs/#L67"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Method not implemented.</p>
+  <div class="markdown level1 summary"><p>Validates parameters at compile time when literal integers are provided.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -379,7 +449,17 @@ sets up canvas for drawing.</p>
 
 
 
+  <h4 class="section" id="BOOSE_App_DrawToCommand_Compile_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If either parameter is an expression or variable reference, full validation is deferred until
+<a class="xref" href="BOOSE_App.DrawToCommand.html#BOOSE_App_DrawToCommand_Execute">Execute()</a>.</p>
+</div>
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ParserException</span></dt>
+    <dd><p>Thrown if a literal X or Y value is negative.</p>
+</dd>
+  </dl>
 
 
 
@@ -387,10 +467,10 @@ sets up canvas for drawing.</p>
 
   <h3 id="BOOSE_App_DrawToCommand_Execute" data-uid="BOOSE_App.DrawToCommand.Execute">
   Execute()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/DrawToCommand.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/DrawToCommand.cs/#L86"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Executes drawto command.</p>
+  <div class="markdown level1 summary"><p>Executes the command by resolving X and Y values and drawing a line to the target coordinate.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -407,10 +487,16 @@ sets up canvas for drawing.</p>
 
 
   <h4 class="section" id="BOOSE_App_DrawToCommand_Execute_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>Calls drawto method from canvas
-using command parameters.</p>
+  <div class="markdown level1 remarks"><p>If a parameter is a literal integer it is used directly; otherwise it is evaluated using
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">EvaluateExpressionWithString(string)</a> and parsed to an integer.</p>
 </div>
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">CommandException</span></dt>
+    <dd><p>Thrown if the resolved X or Y value is negative.</p>
+</dd>
+  </dl>
 
 
 
@@ -418,10 +504,11 @@ using command parameters.</p>
 
   <h3 id="BOOSE_App_DrawToCommand_Set_BOOSE_StoredProgram_System_String_" data-uid="BOOSE_App.DrawToCommand.Set(BOOSE.StoredProgram,System.String)">
   Set(StoredProgram, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/DrawToCommand.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/DrawToCommand.cs/#L128"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Sets command parameters.</p>
+  <div class="markdown level1 summary"><p>Recieves raw parser input then sorts it into a command and it's
+parameters. Validates parameter count by running checkParameters method.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 

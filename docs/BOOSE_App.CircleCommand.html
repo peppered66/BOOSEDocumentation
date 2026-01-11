@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class CircleCommand | mysite ">
       
-      <meta name="description" content="Command class for drawing circles onto canvas at current pen position. Bypasses BOOSE restrictions.">
+      <meta name="description" content="Command class for drawing circles onto canvas at current pen position. Bypasses BOOSE restrictions. Uses  interface.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="BOOSE_App_CircleCommand" data-uid="BOOSE_App.CircleCommand" class="text-break">
-Class CircleCommand  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/CircleCommand.cs/#L13"><i class="bi bi-code-slash"></i></a>
+Class CircleCommand  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/CircleCommand.cs/#L19"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -98,7 +98,8 @@ Class CircleCommand  <a class="header-action link-secondary" title="View source"
   </div>
 
   <div class="markdown summary"><p>Command class for drawing circles onto canvas at
-current pen position. Bypasses BOOSE restrictions.</p>
+current pen position. Bypasses BOOSE restrictions.
+Uses <span class="xref">BOOSE.ICommand</span> interface.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -154,6 +155,11 @@ current pen position. Bypasses BOOSE restrictions.</p>
 
 
 
+  <h2 id="BOOSE_App_CircleCommand_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This command stores its radius parameter as a string during parsing so it can be
+evaluated at runtime. The actual drawing is performed by
+calling <a class="xref" href="BOOSE_App.AppCanvas.html#BOOSE_App_AppCanvas_Circle_System_Int32_System_Boolean_">Circle(int, bool)</a>.</p>
+</div>
 
 
   <h2 class="section" id="constructors">Constructors
@@ -164,11 +170,10 @@ current pen position. Bypasses BOOSE restrictions.</p>
 
   <h3 id="BOOSE_App_CircleCommand__ctor_BOOSE_App_AppCanvas_" data-uid="BOOSE_App.CircleCommand.#ctor(BOOSE_App.AppCanvas)">
   CircleCommand(AppCanvas)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/CircleCommand.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/CircleCommand.cs/#L50"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Constructor for command setting up canvas
-for drawing.</p>
+  <div class="markdown level1 summary"><p>Constructor for command setting up canvas for drawing.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -179,7 +184,8 @@ for drawing.</p>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>canvas</code> <a class="xref" href="BOOSE_App.AppCanvas.html">AppCanvas</a></dt>
-    <dd></dd>
+    <dd><p>The canvas that will receive the drawing.</p>
+</dd>
   </dl>
 
 
@@ -200,7 +206,7 @@ for drawing.</p>
 
   <h3 id="BOOSE_App_CircleCommand_canvas" data-uid="BOOSE_App.CircleCommand.canvas">
   canvas
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/CircleCommand.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/CircleCommand.cs/#L29"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Canvas that will be drawn onto.</p>
@@ -231,7 +237,7 @@ for drawing.</p>
 
   <h3 id="BOOSE_App_CircleCommand_filled" data-uid="BOOSE_App.CircleCommand.filled">
   filled
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/CircleCommand.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/CircleCommand.cs/#L44"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether circle will be filled.</p>
@@ -262,10 +268,10 @@ for drawing.</p>
 
   <h3 id="BOOSE_App_CircleCommand_program" data-uid="BOOSE_App.CircleCommand.program">
   program
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/CircleCommand.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/CircleCommand.cs/#L24"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Stored command from parser for execution.</p>
+  <div class="markdown level1 summary"><p>Stored commands passed by parser for execution.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -291,17 +297,17 @@ for drawing.</p>
 
 
 
-  <h3 id="BOOSE_App_CircleCommand_radius" data-uid="BOOSE_App.CircleCommand.radius">
-  radius
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/CircleCommand.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BOOSE_App_CircleCommand_radiusParam" data-uid="BOOSE_App.CircleCommand.radiusParam">
+  radiusParam
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/CircleCommand.cs/#L39"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>The radius of the circle to be drawn.</p>
+  <div class="markdown level1 summary"><p>The radius of the circle passed by the parser as a string for evaluation.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int radius</code></pre>
+    <pre><code class="lang-csharp hljs">public string radiusParam</code></pre>
   </div>
 
 
@@ -309,10 +315,46 @@ for drawing.</p>
 
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="BOOSE_App_CircleCommand_radius_" data-uid="BOOSE_App.CircleCommand.radius*"></a>
+
+  <h3 id="BOOSE_App_CircleCommand_radius" data-uid="BOOSE_App.CircleCommand.radius">
+  radius
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/CircleCommand.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The radius of the circle to be drawn set during execution.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int radius { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -329,10 +371,10 @@ for drawing.</p>
 
   <h3 id="BOOSE_App_CircleCommand_CheckParameters_System_String___" data-uid="BOOSE_App.CircleCommand.CheckParameters(System.String[])">
   CheckParameters(string[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/CircleCommand.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/CircleCommand.cs/#L62"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Checks command parameters are valid.</p>
+  <div class="markdown level1 summary"><p>Checks command has correct amount of parameters.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -358,12 +400,7 @@ for drawing.</p>
   <h4 class="section">Exceptions</h4>
   <dl class="parameters">
     <dt><span class="xref">ParserException</span></dt>
-    <dd><p>Thrown if there is not one parameter stored as expected
-or the radius parameter is not a valid integer.</p>
-</dd>
-    <dt><span class="xref">CommandException</span></dt>
-    <dd><p>Thrown is radius value is below one
-making it invalid.</p>
+    <dd><p>Thrown is there is not one parameters stored as expected.</p>
 </dd>
   </dl>
 
@@ -373,10 +410,10 @@ making it invalid.</p>
 
   <h3 id="BOOSE_App_CircleCommand_Compile" data-uid="BOOSE_App.CircleCommand.Compile">
   Compile()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/CircleCommand.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/CircleCommand.cs/#L78"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Method not implemented.</p>
+  <div class="markdown level1 summary"><p>Validates parameter during compilation if raw integer is passed (expressions are validated during execution).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -392,7 +429,17 @@ making it invalid.</p>
 
 
 
+  <h4 class="section" id="BOOSE_App_CircleCommand_Compile_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If either parameter is an expression or variable reference, full
+validation is deferred until <a class="xref" href="BOOSE_App.CircleCommand.html#BOOSE_App_CircleCommand_Execute">Execute()</a>.</p>
+</div>
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ParserException</span></dt>
+    <dd><p>Thrown when the radius is a literal integer less than zero.</p>
+</dd>
+  </dl>
 
 
 
@@ -400,10 +447,11 @@ making it invalid.</p>
 
   <h3 id="BOOSE_App_CircleCommand_Execute" data-uid="BOOSE_App.CircleCommand.Execute">
   Execute()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/CircleCommand.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/CircleCommand.cs/#L93"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Executes circle command.</p>
+  <div class="markdown level1 summary"><p>Executes circle command by calling canvas method to draw after
+handling radius argument passed by parser.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -420,9 +468,9 @@ making it invalid.</p>
 
 
   <h4 class="section" id="BOOSE_App_CircleCommand_Execute_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>Calls circle method from canvas using parsed
-parameter. Ignores restrictions implemented
-by BOOSE.</p>
+  <div class="markdown level1 remarks"><p>If <a class="xref" href="BOOSE_App.CircleCommand.html#BOOSE_App_CircleCommand_radiusParam">radiusParam</a> is a literal integer, it is used directly.
+Otherwise, it is evaluated using <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">EvaluateExpression(string)</a>,
+rounded to the nearest integer, and then used as the radius.</p>
 </div>
 
 
@@ -432,10 +480,11 @@ by BOOSE.</p>
 
   <h3 id="BOOSE_App_CircleCommand_Set_BOOSE_StoredProgram_System_String_" data-uid="BOOSE_App.CircleCommand.Set(BOOSE.StoredProgram,System.String)">
   Set(StoredProgram, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/CircleCommand.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/CircleCommand.cs/#L116"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Sets command parameters.</p>
+  <div class="markdown level1 summary"><p>Recieves raw parser input then sorts it into a command and it's
+parameters. Validates parameter count by running checkParameters method.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -468,7 +517,7 @@ by BOOSE.</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/CircleCommand.cs/#L13" class="edit-link">Edit this page</a>
+          <a href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/CircleCommand.cs/#L19" class="edit-link">Edit this page</a>
         </div>
 
 

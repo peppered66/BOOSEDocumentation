@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class CommandParser | mysite </title>
+      <title>Class AppElse | mysite </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class CommandParser | mysite ">
+      <meta name="title" content="Class AppElse | mysite ">
       
-      <meta name="description" content="Parses user input into valid BOOSE commands. Works with command factory to create command objects and stores them in  for execution.">
+      <meta name="description" content="Else command class which executes code if a false value is passed into the stack by the if command. Bypasses BOOSE restrictions.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/new/main/apiSpec/new?filename=BOOSE_App_CommandParser.md&amp;value=---%0Auid%3A%20BOOSE_App.CommandParser%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/new/main/apiSpec/new?filename=BOOSE_App_AppElse.md&amp;value=---%0Auid%3A%20BOOSE_App.AppElse%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,12 +84,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="BOOSE_App.CommandParser">
+        <article data-uid="BOOSE_App.AppElse">
 
 
 
-  <h1 id="BOOSE_App_CommandParser" data-uid="BOOSE_App.CommandParser" class="text-break">
-Class CommandParser  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/CommandParser.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  <h1 id="BOOSE_App_AppElse" data-uid="BOOSE_App.AppElse" class="text-break">
+Class AppElse  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/AppElse.cs/#L13"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,15 +97,14 @@ Class CommandParser  <a class="header-action link-secondary" title="View source"
   <dl><dt>Assembly</dt><dd>BOOSE_App.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Parses user input into valid BOOSE commands.
-Works with command factory to create command objects
-and stores them in <span class="xref">BOOSE.StoredProgram</span> for
-execution.</p>
+  <div class="markdown summary"><p>Else command class which executes code if a false
+value is passed into the stack by the if command.
+Bypasses BOOSE restrictions.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class CommandParser : IParser</code></pre>
+    <pre><code class="lang-csharp hljs">public class AppElse : ICommand</code></pre>
   </div>
 
 
@@ -115,14 +114,14 @@ execution.</p>
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">CommandParser</span></div>
+      <div><span class="xref">AppElse</span></div>
     </dd>
   </dl>
 
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
-      <div><span class="xref">IParser</span></div>
+      <div><span class="xref">ICommand</span></div>
     </dd>
   </dl>
 
@@ -158,146 +157,32 @@ execution.</p>
 
 
 
-  <h2 class="section" id="constructors">Constructors
-</h2>
-
-
-  <a id="BOOSE_App_CommandParser__ctor_" data-uid="BOOSE_App.CommandParser.#ctor*"></a>
-
-  <h3 id="BOOSE_App_CommandParser__ctor_BOOSE_App_AppCommandFactory_BOOSE_StoredProgram_" data-uid="BOOSE_App.CommandParser.#ctor(BOOSE_App.AppCommandFactory,BOOSE.StoredProgram)">
-  CommandParser(AppCommandFactory, StoredProgram)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/CommandParser.cs/#L31"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Constructor for <a class="xref" href="BOOSE_App.CommandParser.html">CommandParser</a> that
-intialises command factory and stored program.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CommandParser(AppCommandFactory factory, StoredProgram program)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>factory</code> <a class="xref" href="BOOSE_App.AppCommandFactory.html">AppCommandFactory</a></dt>
-    <dd><p>Factory used to create commands.</p>
-</dd>
-    <dt><code>program</code> <span class="xref">StoredProgram</span></dt>
-    <dd><p>Program used to store commands.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <h2 class="section" id="fields">Fields
-</h2>
-
-
-
-  <h3 id="BOOSE_App_CommandParser_factory" data-uid="BOOSE_App.CommandParser.factory">
-  factory
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/CommandParser.cs/#L19"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Factory used to create command objects based on parsed user input.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AppCommandFactory factory</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="BOOSE_App.AppCommandFactory.html">AppCommandFactory</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="BOOSE_App_CommandParser_storedProgram" data-uid="BOOSE_App.CommandParser.storedProgram">
-  storedProgram
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/CommandParser.cs/#L23"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Stores command objects so they can be executed.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public StoredProgram storedProgram</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">StoredProgram</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
   <h2 class="section" id="methods">Methods
 </h2>
 
 
-  <a id="BOOSE_App_CommandParser_ParseCommand_" data-uid="BOOSE_App.CommandParser.ParseCommand*"></a>
+  <a id="BOOSE_App_AppElse_CheckParameters_" data-uid="BOOSE_App.AppElse.CheckParameters*"></a>
 
-  <h3 id="BOOSE_App_CommandParser_ParseCommand_System_String_" data-uid="BOOSE_App.CommandParser.ParseCommand(System.String)">
-  ParseCommand(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/CommandParser.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BOOSE_App_AppElse_CheckParameters_System_String___" data-uid="BOOSE_App.AppElse.CheckParameters(System.String[])">
+  CheckParameters(string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/AppElse.cs/#L25"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Parses a single line of user input into a command object.</p>
+  <div class="markdown level1 summary"><p>Checks command has correct amount of parameters.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ICommand ParseCommand(string Line)</code></pre>
+    <pre><code class="lang-csharp hljs">public void CheckParameters(string[] Parameters)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>Line</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>Raw user input string.</p>
+    <dt><code>Parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p>Array containing command parameters.</p>
 </dd>
   </dl>
 
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><span class="xref">ICommand</span></dt>
-    <dd><p>A compiled <span class="xref">BOOSE.ICommand</span> object containing
-command and command parameters for execution.</p>
-</dd>
-  </dl>
 
 
 
@@ -309,8 +194,115 @@ command and command parameters for execution.</p>
   <h4 class="section">Exceptions</h4>
   <dl class="parameters">
     <dt><span class="xref">ParserException</span></dt>
-    <dd></dd>
+    <dd><p>Thrown if there is not zero parameters stored as expected.</p>
+</dd>
   </dl>
+
+
+
+  <a id="BOOSE_App_AppElse_Compile_" data-uid="BOOSE_App.AppElse.Compile*"></a>
+
+  <h3 id="BOOSE_App_AppElse_Compile" data-uid="BOOSE_App.AppElse.Compile">
+  Compile()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/AppElse.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Method not implemented.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Compile()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSE_App_AppElse_Execute_" data-uid="BOOSE_App.AppElse.Execute*"></a>
+
+  <h3 id="BOOSE_App_AppElse_Execute" data-uid="BOOSE_App.AppElse.Execute">
+  Execute()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/AppElse.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Executes else command by determining whether the
+associated if block has already been executed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Execute()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h4 class="section" id="BOOSE_App_AppElse_Execute_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If the corresponding if condition is true execution skips
+directly to the command following end if. Otherwise, execution
+continues into the else block.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">CommandException</span></dt>
+    <dd><p>Thrown when there is no matching <code>if</code> statement on the runtime stack.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="BOOSE_App_AppElse_Set_" data-uid="BOOSE_App.AppElse.Set*"></a>
+
+  <h3 id="BOOSE_App_AppElse_Set_BOOSE_StoredProgram_System_String_" data-uid="BOOSE_App.AppElse.Set(BOOSE.StoredProgram,System.String)">
+  Set(StoredProgram, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/AppElse.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Recieves raw parser input then sorts it and validates
+via setting command parameters and runing checkparameters method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Set(StoredProgram Program, string Params)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Program</code> <span class="xref">StoredProgram</span></dt>
+    <dd><p>Reference for the command stored by the parser.</p>
+</dd>
+    <dt><code>Params</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Reference for command parameters stored by the parser.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="BOOSE_App_AppElse_Set_BOOSE_StoredProgram_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Parameters are split on commas and whitespace, then validated by <a class="xref" href="BOOSE_App.AppElse.html#BOOSE_App_AppElse_CheckParameters_System_String___">CheckParameters(string[])</a>.</p>
+</div>
+
 
 
 
@@ -318,7 +310,7 @@ command and command parameters for execution.</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/CommandParser.cs/#L14" class="edit-link">Edit this page</a>
+          <a href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSE_App/AppElse.cs/#L13" class="edit-link">Edit this page</a>
         </div>
 
 

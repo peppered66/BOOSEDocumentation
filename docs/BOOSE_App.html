@@ -95,6 +95,12 @@
 Classes
 </h3>
     <dl class="jumplist">
+      <dt><a class="xref" href="BOOSE_App.AppArray.html">AppArray</a></dt>
+      <dd><p>Array command class which creates an array variable for <span class="xref">BOOSE.StoredProgram</span>.
+This class creates both integer and real arrays and bypasses BOOSE restrictions.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="BOOSE_App.AppCanvas.html">AppCanvas</a></dt>
       <dd><p>Class used for a drawable canvas via underlying bitmap.
 Supports basic drawing operations which are built upon
@@ -109,9 +115,95 @@ allowing drawing operations to be used avoiding their inherited restrictions.</p
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="BOOSE_App.AppElse.html">AppElse</a></dt>
+      <dd><p>Else command class which executes code if a false
+value is passed into the stack by the if command.
+Bypasses BOOSE restrictions.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSE_App.AppEndFor.html">AppEndFor</a></dt>
+      <dd><p>End for command class which marks the end of a for loop.
+Determines whether loop should repeat or end, bypasses
+BOOSE restrictions.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSE_App.AppEndIf.html">AppEndIf</a></dt>
+      <dd><p>End if command class used to mark the end of an if block
+and updates runtimestack. Bypasses BOOSE restrictions.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSE_App.AppEndWhile.html">AppEndWhile</a></dt>
+      <dd><p>End command class which marks the end of a while loop.
+Bypasses BOOSE restrictions.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSE_App.AppFor.html">AppFor</a></dt>
+      <dd><p>For command class which executes a loop by iterating an
+integer variable from a start value to an end value using an optional step.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSE_App.AppFor.ForRuntime.html">AppFor.ForRuntime</a></dt>
+      <dd><p>Maintains a stack of active for commands.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSE_App.AppIf.html">AppIf</a></dt>
+      <dd><p>If command class which evalutes two expressions to set a boolean condition.
+Command execution is determined based on the boolean result. Bypasses BOOSE
+restrictions.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSE_App.AppIf.IfRuntime.html">AppIf.IfRuntime</a></dt>
+      <dd><p>Maintains a stack of active if commands.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSE_App.AppInt.html">AppInt</a></dt>
+      <dd><p>Command class for handling integer variable assignments.
+Replaces BOOSE.Int functionality for runtime expression evaluation.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSE_App.AppPeek.html">AppPeek</a></dt>
+      <dd><p>Peek command class which reads a value from an array and
+assigns it to an existing variable. Bypasses
+BOOSE restrictions.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSE_App.AppPoke.html">AppPoke</a></dt>
+      <dd><p>Poke command which writes a value into an array element.
+Bypasses BOOSE restrictions.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSE_App.AppReal.html">AppReal</a></dt>
+      <dd><p>Command class for handling real (double) variable assignments.
+Replaces BOOSE.Real functionality for runtime expression evaluation.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSE_App.AppWhile.html">AppWhile</a></dt>
+      <dd><p>While command class which evaluates two expressions to set a boolean condition.
+Command execution is repeatedly performed while the condition remains true.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSE_App.AppWhile.WhileRuntime.html">AppWhile.WhileRuntime</a></dt>
+      <dd><p>Maintains a stack of active while commands.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="BOOSE_App.CircleCommand.html">CircleCommand</a></dt>
       <dd><p>Command class for drawing circles onto canvas at
-current pen position. Bypasses BOOSE restrictions.</p>
+current pen position. Bypasses BOOSE restrictions.
+Uses <span class="xref">BOOSE.ICommand</span> interface.</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -142,18 +234,20 @@ which interact with the drawable canvas.</p>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="BOOSE_App.PenCommand.html">PenCommand</a></dt>
-      <dd></dd>
+      <dd><p>Command class used for setting the pen colour used
+for drawing on canvas.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="BOOSE_App.RectangleCommand.html">RectangleCommand</a></dt>
       <dd><p>Command class for drawing rectangles onto canvas
-at current pen position.</p>
+at current pen position. Bypasses BOOSE restrictions.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="BOOSE_App.WriteCommand.html">WriteCommand</a></dt>
       <dd><p>Command class for drawing text onto canvas at current pen position.
-Uses <span class="xref">BOOSE.ICommand</span> interface</p>
+Uses <span class="xref">BOOSE.ICommand</span> interface.</p>
 </dd>
     </dl>
 

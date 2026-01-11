@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class AppPeekTests | mysite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class AppPeekTests | mysite ">
+      
+      <meta name="description" content="Contains unit tests for the  command. Tests cover parameter validation/parsing, compile-time validation (variable/array existence), and execution-time behavior for reading values from  instances.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/new/main/apiSpec/new?filename=BOOSEUnitTesting_AppPeekTests.md&amp;value=---%0Auid%3A%20BOOSEUnitTesting.AppPeekTests%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="mysite">
+            mysite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="BOOSEUnitTesting.AppPeekTests">
+
+
+
+  <h1 id="BOOSEUnitTesting_AppPeekTests" data-uid="BOOSEUnitTesting.AppPeekTests" class="text-break">
+Class AppPeekTests  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/AppPeekTests.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="BOOSEUnitTesting.html">BOOSEUnitTesting</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BOOSEUnitTesting.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Contains unit tests for the <a class="xref" href="BOOSE_App.AppPeek.html">AppPeek</a> command.
+Tests cover parameter validation/parsing, compile-time validation (variable/array existence),
+and execution-time behavior for reading values from <a class="xref" href="BOOSE_App.AppArray.html">AppArray</a> instances.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestClass]
+public class AppPeekTests : TestBase</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="BOOSEUnitTesting.TestBase.html">TestBase</a></div>
+      <div><span class="xref">AppPeekTests</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="BOOSEUnitTesting.TestBase.html#BOOSEUnitTesting_TestBase_Program">TestBase.Program</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSEUnitTesting.TestBase.html#BOOSEUnitTesting_TestBase_Canvas">TestBase.Canvas</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSEUnitTesting.TestBase.html#BOOSEUnitTesting_TestBase_BaseSetup">TestBase.BaseSetup()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="BOOSEUnitTesting_AppPeekTests_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>BOOSE enforces strict runtime typing for <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UpdateVariable(string, int)</a> and
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UpdateVariable(string, double)</a>. In this project, registering a variable name
+via <span class="xref">BOOSE.StoredProgram.AddVariable(BOOSE.Evaluation)</span> does not make it a typed BOOSE int/real variable,
+so execution tests that attempt to update a scalar variable will typically throw
+<span class="xref">BOOSE.CommandException</span> (type mismatch).</p>
+<p>The execution tests below therefore focus on:</p>
+<ul>
+<li>validation paths (missing array/variable, not-an-array, out-of-bounds)</li>
+<li>successful retrieval from the array (verified by the array still holding the expected value)</li>
+<li>and the fact that a scalar update attempt occurs (observed via the expected BOOSE type-mismatch exception).</li>
+</ul>
+</div>
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="BOOSEUnitTesting_AppPeekTests_CheckParameters_WhenFourOrMore_DoesNotThrow_" data-uid="BOOSEUnitTesting.AppPeekTests.CheckParameters_WhenFourOrMore_DoesNotThrow*"></a>
+
+  <h3 id="BOOSEUnitTesting_AppPeekTests_CheckParameters_WhenFourOrMore_DoesNotThrow" data-uid="BOOSEUnitTesting.AppPeekTests.CheckParameters_WhenFourOrMore_DoesNotThrow">
+  CheckParameters_WhenFourOrMore_DoesNotThrow()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/AppPeekTests.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that <a class="xref" href="BOOSE_App.AppPeek.html#BOOSE_App_AppPeek_CheckParameters_System_String___">CheckParameters(string[])</a> does not throw when at least four parameters are supplied.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void CheckParameters_WhenFourOrMore_DoesNotThrow()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEUnitTesting_AppPeekTests_CheckParameters_WhenLessThanFour_ThrowsParserException_" data-uid="BOOSEUnitTesting.AppPeekTests.CheckParameters_WhenLessThanFour_ThrowsParserException*"></a>
+
+  <h3 id="BOOSEUnitTesting_AppPeekTests_CheckParameters_WhenLessThanFour_ThrowsParserException" data-uid="BOOSEUnitTesting.AppPeekTests.CheckParameters_WhenLessThanFour_ThrowsParserException">
+  CheckParameters_WhenLessThanFour_ThrowsParserException()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/AppPeekTests.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that <a class="xref" href="BOOSE_App.AppPeek.html#BOOSE_App_AppPeek_CheckParameters_System_String___">CheckParameters(string[])</a> throws a <span class="xref">BOOSE.ParserException</span>
+when fewer than four parameters are supplied.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void CheckParameters_WhenLessThanFour_ThrowsParserException()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEUnitTesting_AppPeekTests_Compile_WhenArrayMissing_ThrowsParserException_" data-uid="BOOSEUnitTesting.AppPeekTests.Compile_WhenArrayMissing_ThrowsParserException*"></a>
+
+  <h3 id="BOOSEUnitTesting_AppPeekTests_Compile_WhenArrayMissing_ThrowsParserException" data-uid="BOOSEUnitTesting.AppPeekTests.Compile_WhenArrayMissing_ThrowsParserException">
+  Compile_WhenArrayMissing_ThrowsParserException()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/AppPeekTests.cs/#L166"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that <a class="xref" href="BOOSE_App.AppPeek.html#BOOSE_App_AppPeek_Compile">Compile()</a> throws a <span class="xref">BOOSE.ParserException</span>
+when the array does not exist.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Compile_WhenArrayMissing_ThrowsParserException()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEUnitTesting_AppPeekTests_Compile_WhenTargetAndArrayExist_DoesNotThrow_" data-uid="BOOSEUnitTesting.AppPeekTests.Compile_WhenTargetAndArrayExist_DoesNotThrow*"></a>
+
+  <h3 id="BOOSEUnitTesting_AppPeekTests_Compile_WhenTargetAndArrayExist_DoesNotThrow" data-uid="BOOSEUnitTesting.AppPeekTests.Compile_WhenTargetAndArrayExist_DoesNotThrow">
+  Compile_WhenTargetAndArrayExist_DoesNotThrow()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/AppPeekTests.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that <a class="xref" href="BOOSE_App.AppPeek.html#BOOSE_App_AppPeek_Compile">Compile()</a> does not throw when the target variable and array both exist.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Compile_WhenTargetAndArrayExist_DoesNotThrow()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEUnitTesting_AppPeekTests_Compile_WhenTargetVariableMissing_ThrowsParserException_" data-uid="BOOSEUnitTesting.AppPeekTests.Compile_WhenTargetVariableMissing_ThrowsParserException*"></a>
+
+  <h3 id="BOOSEUnitTesting_AppPeekTests_Compile_WhenTargetVariableMissing_ThrowsParserException" data-uid="BOOSEUnitTesting.AppPeekTests.Compile_WhenTargetVariableMissing_ThrowsParserException">
+  Compile_WhenTargetVariableMissing_ThrowsParserException()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/AppPeekTests.cs/#L150"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that <a class="xref" href="BOOSE_App.AppPeek.html#BOOSE_App_AppPeek_Compile">Compile()</a> throws a <span class="xref">BOOSE.ParserException</span>
+when the target variable does not exist.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Compile_WhenTargetVariableMissing_ThrowsParserException()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEUnitTesting_AppPeekTests_Execute_WhenIndexOutOfBounds_ThrowsCommandException_" data-uid="BOOSEUnitTesting.AppPeekTests.Execute_WhenIndexOutOfBounds_ThrowsCommandException*"></a>
+
+  <h3 id="BOOSEUnitTesting_AppPeekTests_Execute_WhenIndexOutOfBounds_ThrowsCommandException" data-uid="BOOSEUnitTesting.AppPeekTests.Execute_WhenIndexOutOfBounds_ThrowsCommandException">
+  Execute_WhenIndexOutOfBounds_ThrowsCommandException()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/AppPeekTests.cs/#L219"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that <a class="xref" href="BOOSE_App.AppPeek.html#BOOSE_App_AppPeek_Execute">Execute()</a> throws a <span class="xref">BOOSE.CommandException</span>
+when the requested index is out of bounds for the target array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Execute_WhenIndexOutOfBounds_ThrowsCommandException()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEUnitTesting_AppPeekTests_Execute_WhenIntArray_AttemptsUpdate_ThrowsTypeMismatchCommandException_" data-uid="BOOSEUnitTesting.AppPeekTests.Execute_WhenIntArray_AttemptsUpdate_ThrowsTypeMismatchCommandException*"></a>
+
+  <h3 id="BOOSEUnitTesting_AppPeekTests_Execute_WhenIntArray_AttemptsUpdate_ThrowsTypeMismatchCommandException" data-uid="BOOSEUnitTesting.AppPeekTests.Execute_WhenIntArray_AttemptsUpdate_ThrowsTypeMismatchCommandException">
+  Execute_WhenIntArray_AttemptsUpdate_ThrowsTypeMismatchCommandException()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/AppPeekTests.cs/#L237"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that <a class="xref" href="BOOSE_App.AppPeek.html#BOOSE_App_AppPeek_Execute">Execute()</a> attempts to peek from an int array and then update the target variable.
+In this BOOSE build, updating a non-typed dummy variable will throw a type-mismatch <span class="xref">BOOSE.CommandException</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Execute_WhenIntArray_AttemptsUpdate_ThrowsTypeMismatchCommandException()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEUnitTesting_AppPeekTests_Execute_WhenRealArray_AttemptsUpdate_ThrowsTypeMismatchCommandException_" data-uid="BOOSEUnitTesting.AppPeekTests.Execute_WhenRealArray_AttemptsUpdate_ThrowsTypeMismatchCommandException*"></a>
+
+  <h3 id="BOOSEUnitTesting_AppPeekTests_Execute_WhenRealArray_AttemptsUpdate_ThrowsTypeMismatchCommandException" data-uid="BOOSEUnitTesting.AppPeekTests.Execute_WhenRealArray_AttemptsUpdate_ThrowsTypeMismatchCommandException">
+  Execute_WhenRealArray_AttemptsUpdate_ThrowsTypeMismatchCommandException()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/AppPeekTests.cs/#L260"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that <a class="xref" href="BOOSE_App.AppPeek.html#BOOSE_App_AppPeek_Execute">Execute()</a> attempts to peek from a real array and then update the target variable.
+In this BOOSE build, updating a non-typed dummy variable will throw a type-mismatch <span class="xref">BOOSE.CommandException</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Execute_WhenRealArray_AttemptsUpdate_ThrowsTypeMismatchCommandException()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEUnitTesting_AppPeekTests_Execute_WhenReferencedVariableNotArray_ThrowsCommandException_" data-uid="BOOSEUnitTesting.AppPeekTests.Execute_WhenReferencedVariableNotArray_ThrowsCommandException*"></a>
+
+  <h3 id="BOOSEUnitTesting_AppPeekTests_Execute_WhenReferencedVariableNotArray_ThrowsCommandException" data-uid="BOOSEUnitTesting.AppPeekTests.Execute_WhenReferencedVariableNotArray_ThrowsCommandException">
+  Execute_WhenReferencedVariableNotArray_ThrowsCommandException()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/AppPeekTests.cs/#L198"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that <a class="xref" href="BOOSE_App.AppPeek.html#BOOSE_App_AppPeek_Execute">Execute()</a> throws a <span class="xref">BOOSE.CommandException</span>
+when the referenced &quot;array&quot; name exists but is not an <a class="xref" href="BOOSE_App.AppArray.html">AppArray</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Execute_WhenReferencedVariableNotArray_ThrowsCommandException()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEUnitTesting_AppPeekTests_Set_WhenTooFewTokens_ThrowsParserException_" data-uid="BOOSEUnitTesting.AppPeekTests.Set_WhenTooFewTokens_ThrowsParserException*"></a>
+
+  <h3 id="BOOSEUnitTesting_AppPeekTests_Set_WhenTooFewTokens_ThrowsParserException" data-uid="BOOSEUnitTesting.AppPeekTests.Set_WhenTooFewTokens_ThrowsParserException">
+  Set_WhenTooFewTokens_ThrowsParserException()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/AppPeekTests.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that <a class="xref" href="BOOSE_App.AppPeek.html#BOOSE_App_AppPeek_Set_BOOSE_StoredProgram_System_String_">Set(StoredProgram, string)</a> throws a <span class="xref">BOOSE.ParserException</span>
+when fewer than four tokens are supplied.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Set_WhenTooFewTokens_ThrowsParserException()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h4 class="section" id="BOOSEUnitTesting_AppPeekTests_Set_WhenTooFewTokens_ThrowsParserException_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>In the current implementation, <a class="xref" href="BOOSE_App.AppPeek.html#BOOSE_App_AppPeek_CheckParameters_System_String___">CheckParameters(string[])</a> is called
+before indexing into the token array, so the expected exception is <span class="xref">BOOSE.ParserException</span>.</p>
+</div>
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/AppPeekTests.cs/#L25" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

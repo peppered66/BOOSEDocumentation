@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class MoveToCommandTests | mysite ">
       
-      
+      <meta name="description" content="Contains unit tests for the  class. Tests cover parameter validation, compile-time validation for literal inputs, and execution-time behavior for literal and evaluated parameters.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="BOOSEUnitTesting_MoveToCommandTests" data-uid="BOOSEUnitTesting.MoveToCommandTests" class="text-break">
-Class MoveToCommandTests  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/Test1.cs/#L7"><i class="bi bi-code-slash"></i></a>
+Class MoveToCommandTests  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/MoveToCommandTests.cs/#L13"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,12 +97,15 @@ Class MoveToCommandTests  <a class="header-action link-secondary" title="View so
   <dl><dt>Assembly</dt><dd>BOOSEUnitTesting.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Contains unit tests for the <a class="xref" href="BOOSE_App.MoveToCommand.html">MoveToCommand</a> class.
+Tests cover parameter validation, compile-time validation for literal inputs,
+and execution-time behavior for literal and evaluated parameters.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[TestClass]
-public sealed class MoveToCommandTests</code></pre>
+public class MoveToCommandTests : TestBase</code></pre>
   </div>
 
 
@@ -112,6 +115,7 @@ public sealed class MoveToCommandTests</code></pre>
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="BOOSEUnitTesting.TestBase.html">TestBase</a></div>
       <div><span class="xref">MoveToCommandTests</span></div>
     </dd>
   </dl>
@@ -121,6 +125,15 @@ public sealed class MoveToCommandTests</code></pre>
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
+    <div>
+      <a class="xref" href="BOOSEUnitTesting.TestBase.html#BOOSEUnitTesting_TestBase_Program">TestBase.Program</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSEUnitTesting.TestBase.html#BOOSEUnitTesting_TestBase_Canvas">TestBase.Canvas</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSEUnitTesting.TestBase.html#BOOSEUnitTesting_TestBase_BaseSetup">TestBase.BaseSetup()</a>
+    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
@@ -132,6 +145,9 @@ public sealed class MoveToCommandTests</code></pre>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
@@ -150,20 +166,21 @@ public sealed class MoveToCommandTests</code></pre>
 </h2>
 
 
-  <a id="BOOSEUnitTesting_MoveToCommandTests_CheckParametersIncorrectAmount_" data-uid="BOOSEUnitTesting.MoveToCommandTests.CheckParametersIncorrectAmount*"></a>
+  <a id="BOOSEUnitTesting_MoveToCommandTests_CheckParameters_WhenNotTwo_ThrowsParserException_" data-uid="BOOSEUnitTesting.MoveToCommandTests.CheckParameters_WhenNotTwo_ThrowsParserException*"></a>
 
-  <h3 id="BOOSEUnitTesting_MoveToCommandTests_CheckParametersIncorrectAmount" data-uid="BOOSEUnitTesting.MoveToCommandTests.CheckParametersIncorrectAmount">
-  CheckParametersIncorrectAmount()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/Test1.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BOOSEUnitTesting_MoveToCommandTests_CheckParameters_WhenNotTwo_ThrowsParserException" data-uid="BOOSEUnitTesting.MoveToCommandTests.CheckParameters_WhenNotTwo_ThrowsParserException">
+  CheckParameters_WhenNotTwo_ThrowsParserException()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/MoveToCommandTests.cs/#L25"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Verifies that <a class="xref" href="BOOSE_App.MoveToCommand.html#BOOSE_App_MoveToCommand_CheckParameters_System_String___">CheckParameters(string[])</a> throws a
+<span class="xref">BOOSE.ParserException</span> when the parameter count is not exactly two.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[TestMethod]
-[ExpectedException(typeof(ParserException))]
-public void CheckParametersIncorrectAmount()</code></pre>
+public void CheckParameters_WhenNotTwo_ThrowsParserException()</code></pre>
   </div>
 
 
@@ -178,19 +195,21 @@ public void CheckParametersIncorrectAmount()</code></pre>
 
 
 
-  <a id="BOOSEUnitTesting_MoveToCommandTests_CheckParametersInvalidXInput_" data-uid="BOOSEUnitTesting.MoveToCommandTests.CheckParametersInvalidXInput*"></a>
+  <a id="BOOSEUnitTesting_MoveToCommandTests_CheckParameters_WhenTwo_DoesNotThrow_" data-uid="BOOSEUnitTesting.MoveToCommandTests.CheckParameters_WhenTwo_DoesNotThrow*"></a>
 
-  <h3 id="BOOSEUnitTesting_MoveToCommandTests_CheckParametersInvalidXInput" data-uid="BOOSEUnitTesting.MoveToCommandTests.CheckParametersInvalidXInput">
-  CheckParametersInvalidXInput()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/Test1.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BOOSEUnitTesting_MoveToCommandTests_CheckParameters_WhenTwo_DoesNotThrow" data-uid="BOOSEUnitTesting.MoveToCommandTests.CheckParameters_WhenTwo_DoesNotThrow">
+  CheckParameters_WhenTwo_DoesNotThrow()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/MoveToCommandTests.cs/#L38"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Verifies that <a class="xref" href="BOOSE_App.MoveToCommand.html#BOOSE_App_MoveToCommand_CheckParameters_System_String___">CheckParameters(string[])</a> does not throw
+when exactly two parameters are supplied.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[TestMethod]
-public void CheckParametersInvalidXInput()</code></pre>
+public void CheckParameters_WhenTwo_DoesNotThrow()</code></pre>
   </div>
 
 
@@ -205,20 +224,21 @@ public void CheckParametersInvalidXInput()</code></pre>
 
 
 
-  <a id="BOOSEUnitTesting_MoveToCommandTests_CheckParametersInvalidXInputType_" data-uid="BOOSEUnitTesting.MoveToCommandTests.CheckParametersInvalidXInputType*"></a>
+  <a id="BOOSEUnitTesting_MoveToCommandTests_Compile_WhenLiteralCoordinatesNonNegative_DoesNotThrow_" data-uid="BOOSEUnitTesting.MoveToCommandTests.Compile_WhenLiteralCoordinatesNonNegative_DoesNotThrow*"></a>
 
-  <h3 id="BOOSEUnitTesting_MoveToCommandTests_CheckParametersInvalidXInputType" data-uid="BOOSEUnitTesting.MoveToCommandTests.CheckParametersInvalidXInputType">
-  CheckParametersInvalidXInputType()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/Test1.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BOOSEUnitTesting_MoveToCommandTests_Compile_WhenLiteralCoordinatesNonNegative_DoesNotThrow" data-uid="BOOSEUnitTesting.MoveToCommandTests.Compile_WhenLiteralCoordinatesNonNegative_DoesNotThrow">
+  Compile_WhenLiteralCoordinatesNonNegative_DoesNotThrow()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/MoveToCommandTests.cs/#L103"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Verifies that <a class="xref" href="BOOSE_App.MoveToCommand.html#BOOSE_App_MoveToCommand_Compile">Compile()</a> does not throw when both
+literal coordinates are non-negative.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[TestMethod]
-[ExpectedException(typeof(ParserException))]
-public void CheckParametersInvalidXInputType()</code></pre>
+public void Compile_WhenLiteralCoordinatesNonNegative_DoesNotThrow()</code></pre>
   </div>
 
 
@@ -233,19 +253,21 @@ public void CheckParametersInvalidXInputType()</code></pre>
 
 
 
-  <a id="BOOSEUnitTesting_MoveToCommandTests_CheckParametersInvalidYInput_" data-uid="BOOSEUnitTesting.MoveToCommandTests.CheckParametersInvalidYInput*"></a>
+  <a id="BOOSEUnitTesting_MoveToCommandTests_Compile_WhenLiteralXIsNegative_ThrowsParserException_" data-uid="BOOSEUnitTesting.MoveToCommandTests.Compile_WhenLiteralXIsNegative_ThrowsParserException*"></a>
 
-  <h3 id="BOOSEUnitTesting_MoveToCommandTests_CheckParametersInvalidYInput" data-uid="BOOSEUnitTesting.MoveToCommandTests.CheckParametersInvalidYInput">
-  CheckParametersInvalidYInput()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/Test1.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BOOSEUnitTesting_MoveToCommandTests_Compile_WhenLiteralXIsNegative_ThrowsParserException" data-uid="BOOSEUnitTesting.MoveToCommandTests.Compile_WhenLiteralXIsNegative_ThrowsParserException">
+  Compile_WhenLiteralXIsNegative_ThrowsParserException()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/MoveToCommandTests.cs/#L77"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Verifies that <a class="xref" href="BOOSE_App.MoveToCommand.html#BOOSE_App_MoveToCommand_Compile">Compile()</a> throws a <span class="xref">BOOSE.ParserException</span>
+when a literal X coordinate is negative.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[TestMethod]
-public void CheckParametersInvalidYInput()</code></pre>
+public void Compile_WhenLiteralXIsNegative_ThrowsParserException()</code></pre>
   </div>
 
 
@@ -260,20 +282,21 @@ public void CheckParametersInvalidYInput()</code></pre>
 
 
 
-  <a id="BOOSEUnitTesting_MoveToCommandTests_CheckParametersInvalidYInputType_" data-uid="BOOSEUnitTesting.MoveToCommandTests.CheckParametersInvalidYInputType*"></a>
+  <a id="BOOSEUnitTesting_MoveToCommandTests_Compile_WhenLiteralYIsNegative_ThrowsParserException_" data-uid="BOOSEUnitTesting.MoveToCommandTests.Compile_WhenLiteralYIsNegative_ThrowsParserException*"></a>
 
-  <h3 id="BOOSEUnitTesting_MoveToCommandTests_CheckParametersInvalidYInputType" data-uid="BOOSEUnitTesting.MoveToCommandTests.CheckParametersInvalidYInputType">
-  CheckParametersInvalidYInputType()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/Test1.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BOOSEUnitTesting_MoveToCommandTests_Compile_WhenLiteralYIsNegative_ThrowsParserException" data-uid="BOOSEUnitTesting.MoveToCommandTests.Compile_WhenLiteralYIsNegative_ThrowsParserException">
+  Compile_WhenLiteralYIsNegative_ThrowsParserException()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/MoveToCommandTests.cs/#L90"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Verifies that <a class="xref" href="BOOSE_App.MoveToCommand.html#BOOSE_App_MoveToCommand_Compile">Compile()</a> throws a <span class="xref">BOOSE.ParserException</span>
+when a literal Y coordinate is negative.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[TestMethod]
-[ExpectedException(typeof(ParserException))]
-public void CheckParametersInvalidYInputType()</code></pre>
+public void Compile_WhenLiteralYIsNegative_ThrowsParserException()</code></pre>
   </div>
 
 
@@ -288,20 +311,21 @@ public void CheckParametersInvalidYInputType()</code></pre>
 
 
 
-  <a id="BOOSEUnitTesting_MoveToCommandTests_CheckParametersNothingEntered_" data-uid="BOOSEUnitTesting.MoveToCommandTests.CheckParametersNothingEntered*"></a>
+  <a id="BOOSEUnitTesting_MoveToCommandTests_Execute_WhenExpressionEvaluatesNegative_ThrowsCommandException_" data-uid="BOOSEUnitTesting.MoveToCommandTests.Execute_WhenExpressionEvaluatesNegative_ThrowsCommandException*"></a>
 
-  <h3 id="BOOSEUnitTesting_MoveToCommandTests_CheckParametersNothingEntered" data-uid="BOOSEUnitTesting.MoveToCommandTests.CheckParametersNothingEntered">
-  CheckParametersNothingEntered()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/Test1.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BOOSEUnitTesting_MoveToCommandTests_Execute_WhenExpressionEvaluatesNegative_ThrowsCommandException" data-uid="BOOSEUnitTesting.MoveToCommandTests.Execute_WhenExpressionEvaluatesNegative_ThrowsCommandException">
+  Execute_WhenExpressionEvaluatesNegative_ThrowsCommandException()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/MoveToCommandTests.cs/#L186"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Verifies that <a class="xref" href="BOOSE_App.MoveToCommand.html#BOOSE_App_MoveToCommand_Execute">Execute()</a> throws a <span class="xref">BOOSE.CommandException</span>
+when an evaluated coordinate is negative.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[TestMethod]
-[ExpectedException(typeof(ParserException))]
-public void CheckParametersNothingEntered()</code></pre>
+public void Execute_WhenExpressionEvaluatesNegative_ThrowsCommandException()</code></pre>
   </div>
 
 
@@ -316,19 +340,22 @@ public void CheckParametersNothingEntered()</code></pre>
 
 
 
-  <a id="BOOSEUnitTesting_MoveToCommandTests_CheckParametersValidInputs_" data-uid="BOOSEUnitTesting.MoveToCommandTests.CheckParametersValidInputs*"></a>
+  <a id="BOOSEUnitTesting_MoveToCommandTests_Execute_WhenLiteralCoordinatesValid_UpdatesXAndYFields_" data-uid="BOOSEUnitTesting.MoveToCommandTests.Execute_WhenLiteralCoordinatesValid_UpdatesXAndYFields*"></a>
 
-  <h3 id="BOOSEUnitTesting_MoveToCommandTests_CheckParametersValidInputs" data-uid="BOOSEUnitTesting.MoveToCommandTests.CheckParametersValidInputs">
-  CheckParametersValidInputs()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/Test1.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BOOSEUnitTesting_MoveToCommandTests_Execute_WhenLiteralCoordinatesValid_UpdatesXAndYFields" data-uid="BOOSEUnitTesting.MoveToCommandTests.Execute_WhenLiteralCoordinatesValid_UpdatesXAndYFields">
+  Execute_WhenLiteralCoordinatesValid_UpdatesXAndYFields()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/MoveToCommandTests.cs/#L143"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Verifies that <a class="xref" href="BOOSE_App.MoveToCommand.html#BOOSE_App_MoveToCommand_Execute">Execute()</a> updates the command's stored
+integer fields (<a class="xref" href="BOOSE_App.MoveToCommand.html#BOOSE_App_MoveToCommand_x">x</a> and <a class="xref" href="BOOSE_App.MoveToCommand.html#BOOSE_App_MoveToCommand_y">y</a>)
+when valid literal coordinates are supplied.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[TestMethod]
-public void CheckParametersValidInputs()</code></pre>
+public void Execute_WhenLiteralCoordinatesValid_UpdatesXAndYFields()</code></pre>
   </div>
 
 
@@ -343,19 +370,21 @@ public void CheckParametersValidInputs()</code></pre>
 
 
 
-  <a id="BOOSEUnitTesting_MoveToCommandTests_Execute_OutOfBounds_DoesNotCrash_" data-uid="BOOSEUnitTesting.MoveToCommandTests.Execute_OutOfBounds_DoesNotCrash*"></a>
+  <a id="BOOSEUnitTesting_MoveToCommandTests_Execute_WhenLiteralXIsNegative_ThrowsCommandException_" data-uid="BOOSEUnitTesting.MoveToCommandTests.Execute_WhenLiteralXIsNegative_ThrowsCommandException*"></a>
 
-  <h3 id="BOOSEUnitTesting_MoveToCommandTests_Execute_OutOfBounds_DoesNotCrash" data-uid="BOOSEUnitTesting.MoveToCommandTests.Execute_OutOfBounds_DoesNotCrash">
-  Execute_OutOfBounds_DoesNotCrash()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/Test1.cs/#L134"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BOOSEUnitTesting_MoveToCommandTests_Execute_WhenLiteralXIsNegative_ThrowsCommandException" data-uid="BOOSEUnitTesting.MoveToCommandTests.Execute_WhenLiteralXIsNegative_ThrowsCommandException">
+  Execute_WhenLiteralXIsNegative_ThrowsCommandException()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/MoveToCommandTests.cs/#L116"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Verifies that <a class="xref" href="BOOSE_App.MoveToCommand.html#BOOSE_App_MoveToCommand_Execute">Execute()</a> throws a <span class="xref">BOOSE.CommandException</span>
+when the resolved X coordinate is negative (literal path).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[TestMethod]
-public void Execute_OutOfBounds_DoesNotCrash()</code></pre>
+public void Execute_WhenLiteralXIsNegative_ThrowsCommandException()</code></pre>
   </div>
 
 
@@ -370,19 +399,21 @@ public void Execute_OutOfBounds_DoesNotCrash()</code></pre>
 
 
 
-  <a id="BOOSEUnitTesting_MoveToCommandTests_Execute_ValidCoordinates_UpdatesCanvasPosition_" data-uid="BOOSEUnitTesting.MoveToCommandTests.Execute_ValidCoordinates_UpdatesCanvasPosition*"></a>
+  <a id="BOOSEUnitTesting_MoveToCommandTests_Execute_WhenLiteralYIsNegative_ThrowsCommandException_" data-uid="BOOSEUnitTesting.MoveToCommandTests.Execute_WhenLiteralYIsNegative_ThrowsCommandException*"></a>
 
-  <h3 id="BOOSEUnitTesting_MoveToCommandTests_Execute_ValidCoordinates_UpdatesCanvasPosition" data-uid="BOOSEUnitTesting.MoveToCommandTests.Execute_ValidCoordinates_UpdatesCanvasPosition">
-  Execute_ValidCoordinates_UpdatesCanvasPosition()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/Test1.cs/#L122"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BOOSEUnitTesting_MoveToCommandTests_Execute_WhenLiteralYIsNegative_ThrowsCommandException" data-uid="BOOSEUnitTesting.MoveToCommandTests.Execute_WhenLiteralYIsNegative_ThrowsCommandException">
+  Execute_WhenLiteralYIsNegative_ThrowsCommandException()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/MoveToCommandTests.cs/#L129"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Verifies that <a class="xref" href="BOOSE_App.MoveToCommand.html#BOOSE_App_MoveToCommand_Execute">Execute()</a> throws a <span class="xref">BOOSE.CommandException</span>
+when the resolved Y coordinate is negative (literal path).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[TestMethod]
-public void Execute_ValidCoordinates_UpdatesCanvasPosition()</code></pre>
+public void Execute_WhenLiteralYIsNegative_ThrowsCommandException()</code></pre>
   </div>
 
 
@@ -397,19 +428,54 @@ public void Execute_ValidCoordinates_UpdatesCanvasPosition()</code></pre>
 
 
 
-  <a id="BOOSEUnitTesting_MoveToCommandTests_SetValidParameters_" data-uid="BOOSEUnitTesting.MoveToCommandTests.SetValidParameters*"></a>
+  <a id="BOOSEUnitTesting_MoveToCommandTests_Execute_WhenParametersAreExpressions_EvaluatesAndMoves_" data-uid="BOOSEUnitTesting.MoveToCommandTests.Execute_WhenParametersAreExpressions_EvaluatesAndMoves*"></a>
 
-  <h3 id="BOOSEUnitTesting_MoveToCommandTests_SetValidParameters" data-uid="BOOSEUnitTesting.MoveToCommandTests.SetValidParameters">
-  SetValidParameters()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/Test1.cs/#L93"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BOOSEUnitTesting_MoveToCommandTests_Execute_WhenParametersAreExpressions_EvaluatesAndMoves" data-uid="BOOSEUnitTesting.MoveToCommandTests.Execute_WhenParametersAreExpressions_EvaluatesAndMoves">
+  Execute_WhenParametersAreExpressions_EvaluatesAndMoves()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/MoveToCommandTests.cs/#L167"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Verifies that <a class="xref" href="BOOSE_App.MoveToCommand.html#BOOSE_App_MoveToCommand_Execute">Execute()</a> evaluates non-literal parameters using
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">EvaluateExpressionWithString(string)</a> and moves to the resolved coordinates.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[TestMethod]
-public void SetValidParameters()</code></pre>
+public void Execute_WhenParametersAreExpressions_EvaluatesAndMoves()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h4 class="section" id="BOOSEUnitTesting_MoveToCommandTests_Execute_WhenParametersAreExpressions_EvaluatesAndMoves_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>In this BOOSE build, &quot;+&quot; may be treated as concatenation (e.g., &quot;10+5&quot; may become &quot;105&quot;),
+so this test uses subtraction which is observed to evaluate numerically.</p>
+</div>
+
+
+
+
+  <a id="BOOSEUnitTesting_MoveToCommandTests_Set_WhenValid_SetsXParamAndYParam_" data-uid="BOOSEUnitTesting.MoveToCommandTests.Set_WhenValid_SetsXParamAndYParam*"></a>
+
+  <h3 id="BOOSEUnitTesting_MoveToCommandTests_Set_WhenValid_SetsXParamAndYParam" data-uid="BOOSEUnitTesting.MoveToCommandTests.Set_WhenValid_SetsXParamAndYParam">
+  Set_WhenValid_SetsXParamAndYParam()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/MoveToCommandTests.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that <a class="xref" href="BOOSE_App.MoveToCommand.html#BOOSE_App_MoveToCommand_Set_BOOSE_StoredProgram_System_String_">Set(StoredProgram, string)</a> parses the two parameters
+and assigns them to <a class="xref" href="BOOSE_App.MoveToCommand.html#BOOSE_App_MoveToCommand_xParam">xParam</a> and <a class="xref" href="BOOSE_App.MoveToCommand.html#BOOSE_App_MoveToCommand_yParam">yParam</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Set_WhenValid_SetsXParamAndYParam()</code></pre>
   </div>
 
 
@@ -424,75 +490,21 @@ public void SetValidParameters()</code></pre>
 
 
 
-  <a id="BOOSEUnitTesting_MoveToCommandTests_Set_EmptyParams_ThrowsCommandException_" data-uid="BOOSEUnitTesting.MoveToCommandTests.Set_EmptyParams_ThrowsCommandException*"></a>
+  <a id="BOOSEUnitTesting_MoveToCommandTests_Set_WhenWrongParameterCount_ThrowsParserException_" data-uid="BOOSEUnitTesting.MoveToCommandTests.Set_WhenWrongParameterCount_ThrowsParserException*"></a>
 
-  <h3 id="BOOSEUnitTesting_MoveToCommandTests_Set_EmptyParams_ThrowsCommandException" data-uid="BOOSEUnitTesting.MoveToCommandTests.Set_EmptyParams_ThrowsCommandException">
-  Set_EmptyParams_ThrowsCommandException()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/Test1.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BOOSEUnitTesting_MoveToCommandTests_Set_WhenWrongParameterCount_ThrowsParserException" data-uid="BOOSEUnitTesting.MoveToCommandTests.Set_WhenWrongParameterCount_ThrowsParserException">
+  Set_WhenWrongParameterCount_ThrowsParserException()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/MoveToCommandTests.cs/#L64"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Verifies that <a class="xref" href="BOOSE_App.MoveToCommand.html#BOOSE_App_MoveToCommand_Set_BOOSE_StoredProgram_System_String_">Set(StoredProgram, string)</a> throws a
+<span class="xref">BOOSE.ParserException</span> when the parameter count is not exactly two.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[TestMethod]
-[ExpectedException(typeof(ParserException))]
-public void Set_EmptyParams_ThrowsCommandException()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="BOOSEUnitTesting_MoveToCommandTests_Set_InvalidParamCount_ThrowsCommandException_" data-uid="BOOSEUnitTesting.MoveToCommandTests.Set_InvalidParamCount_ThrowsCommandException*"></a>
-
-  <h3 id="BOOSEUnitTesting_MoveToCommandTests_Set_InvalidParamCount_ThrowsCommandException" data-uid="BOOSEUnitTesting.MoveToCommandTests.Set_InvalidParamCount_ThrowsCommandException">
-  Set_InvalidParamCount_ThrowsCommandException()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/Test1.cs/#L114"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[TestMethod]
-[ExpectedException(typeof(ParserException))]
-public void Set_InvalidParamCount_ThrowsCommandException()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="BOOSEUnitTesting_MoveToCommandTests_Setup_" data-uid="BOOSEUnitTesting.MoveToCommandTests.Setup*"></a>
-
-  <h3 id="BOOSEUnitTesting_MoveToCommandTests_Setup" data-uid="BOOSEUnitTesting.MoveToCommandTests.Setup">
-  Setup()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/Test1.cs/#L13"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[TestInitialize]
-public void Setup()</code></pre>
+public void Set_WhenWrongParameterCount_ThrowsParserException()</code></pre>
   </div>
 
 
@@ -511,7 +523,7 @@ public void Setup()</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/Test1.cs/#L7" class="edit-link">Edit this page</a>
+          <a href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/MoveToCommandTests.cs/#L13" class="edit-link">Edit this page</a>
         </div>
 
 
