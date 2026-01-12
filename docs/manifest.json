@@ -1,0 +1,728 @@
+{
+  "source_base_path": "C:/Users/44739/source/documentation",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "BooseDocumentation/BOOSEUnitTesting.AppArrayTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "BooseDocumentation/BOOSEUnitTesting.AppArrayTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEUnitTesting.AppArrayTests",
+      "Summary": "<p sourcefile=\"BooseDocumentation/BOOSEUnitTesting.AppArrayTests.yml\" sourcestartlinenumber=\"1\">Contains unit tests for the <xref href=\"BOOSE_App.AppArray\" data-throw-if-not-resolved=\"false\"></xref> class.\nThese tests validate correct parameter parsing, compilation,\nexecution, and array access behavior for both integer and real arrays.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "BooseDocumentation/BOOSEUnitTesting.AppCanvasTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "BooseDocumentation/BOOSEUnitTesting.AppCanvasTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEUnitTesting.AppCanvasTests",
+      "Summary": "<p sourcefile=\"BooseDocumentation/BOOSEUnitTesting.AppCanvasTests.yml\" sourcestartlinenumber=\"1\">Contains comprehensive unit tests for <xref href=\"BOOSE_App.AppCanvas\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "BooseDocumentation/BOOSEUnitTesting.AppCommandFactoryTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "BooseDocumentation/BOOSEUnitTesting.AppCommandFactoryTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEUnitTesting.AppCommandFactoryTests",
+      "Summary": "<p sourcefile=\"BooseDocumentation/BOOSEUnitTesting.AppCommandFactoryTests.yml\" sourcestartlinenumber=\"1\">Contains unit tests for the <xref href=\"BOOSE_App.AppCommandFactory\" data-throw-if-not-resolved=\"false\"></xref> class.\nVerifies that the factory returns the correct command type for each supported\ncommand name (case-insensitive and whitespace tolerant) and throws\n<xref href=\"BOOSE.FactoryException\" data-throw-if-not-resolved=\"false\"></xref> for unknown commands.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "BooseDocumentation/BOOSEUnitTesting.AppElseTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "BooseDocumentation/BOOSEUnitTesting.AppElseTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEUnitTesting.AppElseTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "BooseDocumentation/BOOSEUnitTesting.AppEndForTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "BooseDocumentation/BOOSEUnitTesting.AppEndForTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEUnitTesting.AppEndForTests",
+      "Summary": "<p sourcefile=\"BooseDocumentation/BOOSEUnitTesting.AppEndForTests.yml\" sourcestartlinenumber=\"1\">Unit tests for <xref href=\"BOOSE_App.AppEndFor\" data-throw-if-not-resolved=\"false\"></xref>.\nThese tests validate parameter rules, runtime stack behaviour, and loop-finish vs loop-continue\ndecisions without asserting on StoredProgram's runner-controlled PC behaviour.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "BooseDocumentation/BOOSEUnitTesting.AppEndIfTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "BooseDocumentation/BOOSEUnitTesting.AppEndIfTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEUnitTesting.AppEndIfTests",
+      "Summary": "<p sourcefile=\"BooseDocumentation/BOOSEUnitTesting.AppEndIfTests.yml\" sourcestartlinenumber=\"1\">Unit tests for <xref href=\"BOOSE_App.AppEndIf\" data-throw-if-not-resolved=\"false\"></xref>.\nValidates parameter rules and runtime stack behaviour when ending an if-block.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "BooseDocumentation/BOOSEUnitTesting.AppEndWhileTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "BooseDocumentation/BOOSEUnitTesting.AppEndWhileTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEUnitTesting.AppEndWhileTests",
+      "Summary": "<p sourcefile=\"BooseDocumentation/BOOSEUnitTesting.AppEndWhileTests.yml\" sourcestartlinenumber=\"1\">Unit tests for <xref href=\"BOOSE_App.AppEndWhile\" data-throw-if-not-resolved=\"false\"></xref>.\nThese tests validate runtime-stack behaviour and error handling.\nPC-jump behaviour is intentionally not asserted here because it is runner/integration behaviour\nand can vary depending on StoredProgram implementation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "BooseDocumentation/BOOSEUnitTesting.AppForTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "BooseDocumentation/BOOSEUnitTesting.AppForTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEUnitTesting.AppForTests",
+      "Summary": "<p sourcefile=\"BooseDocumentation/BOOSEUnitTesting.AppForTests.yml\" sourcestartlinenumber=\"1\">Unit tests for <xref href=\"BOOSE_App.AppFor\" data-throw-if-not-resolved=\"false\"></xref>.\nValidates syntax checking, auto-variable creation, compile-time type validation,\nexecution behaviour across iterations, and step handling.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "BooseDocumentation/BOOSEUnitTesting.AppIfTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "BooseDocumentation/BOOSEUnitTesting.AppIfTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEUnitTesting.AppIfTests",
+      "Summary": "<p sourcefile=\"BooseDocumentation/BOOSEUnitTesting.AppIfTests.yml\" sourcestartlinenumber=\"1\">Unit tests for <xref href=\"BOOSE_App.AppIf\" data-throw-if-not-resolved=\"false\"></xref>.\nFocuses on condition evaluation and branch decision logic without relying\non StoredProgram's execution loop.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "BooseDocumentation/BOOSEUnitTesting.AppIntTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "BooseDocumentation/BOOSEUnitTesting.AppIntTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEUnitTesting.AppIntTests",
+      "Summary": "<p sourcefile=\"BooseDocumentation/BOOSEUnitTesting.AppIntTests.yml\" sourcestartlinenumber=\"1\">Contains unit tests for the <xref href=\"BOOSE_App.AppInt\" data-throw-if-not-resolved=\"false\"></xref> command.\nTests cover parameter validation, compile-time validation (variable existence),\nand execution-time evaluation/updating of an integer variable.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "BooseDocumentation/BOOSEUnitTesting.AppPeekTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "BooseDocumentation/BOOSEUnitTesting.AppPeekTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEUnitTesting.AppPeekTests",
+      "Summary": "<p sourcefile=\"BooseDocumentation/BOOSEUnitTesting.AppPeekTests.yml\" sourcestartlinenumber=\"1\">Contains unit tests for the <xref href=\"BOOSE_App.AppPeek\" data-throw-if-not-resolved=\"false\"></xref> command.\nTests cover parameter validation/parsing, compile-time validation (variable/array existence),\nand execution-time behavior for reading values from <xref href=\"BOOSE_App.AppArray\" data-throw-if-not-resolved=\"false\"></xref> instances.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "BooseDocumentation/BOOSEUnitTesting.AppPokeTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "BooseDocumentation/BOOSEUnitTesting.AppPokeTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEUnitTesting.AppPokeTests",
+      "Summary": "<p sourcefile=\"BooseDocumentation/BOOSEUnitTesting.AppPokeTests.yml\" sourcestartlinenumber=\"1\">Contains unit tests for the <xref href=\"BOOSE_App.AppPoke\" data-throw-if-not-resolved=\"false\"></xref> command.\nTests cover parameter validation/parsing, compile-time validation (array existence),\nand execution-time behavior for writing values into <xref href=\"BOOSE_App.AppArray\" data-throw-if-not-resolved=\"false\"></xref> elements.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "BooseDocumentation/BOOSEUnitTesting.AppRealTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "BooseDocumentation/BOOSEUnitTesting.AppRealTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEUnitTesting.AppRealTests",
+      "Summary": "<p sourcefile=\"BooseDocumentation/BOOSEUnitTesting.AppRealTests.yml\" sourcestartlinenumber=\"1\">Contains unit tests for the <xref href=\"BOOSE_App.AppReal\" data-throw-if-not-resolved=\"false\"></xref> command.\nThese tests focus on parameter validation and compile-time validation,\nand account for BOOSE runtime typing rules which require a true &quot;real&quot; variable\nto successfully call <xref href=\"BOOSE.StoredProgram.UpdateVariable(System.String%2cSystem.Double)\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "BooseDocumentation/BOOSEUnitTesting.AppWhileTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "BooseDocumentation/BOOSEUnitTesting.AppWhileTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEUnitTesting.AppWhileTests",
+      "Summary": "<p sourcefile=\"BooseDocumentation/BOOSEUnitTesting.AppWhileTests.yml\" sourcestartlinenumber=\"1\">Unit tests for <xref href=\"BOOSE_App.AppWhile\" data-throw-if-not-resolved=\"false\"></xref>.\nValidates condition evaluation, operator validation,\nand loop exit behaviour without relying on program runner.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "BooseDocumentation/BOOSEUnitTesting.CircleCommandTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "BooseDocumentation/BOOSEUnitTesting.CircleCommandTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEUnitTesting.CircleCommandTests",
+      "Summary": "<p sourcefile=\"BooseDocumentation/BOOSEUnitTesting.CircleCommandTests.yml\" sourcestartlinenumber=\"1\">Contains unit tests for the <xref href=\"BOOSE_App.CircleCommand\" data-throw-if-not-resolved=\"false\"></xref> class.\nTests cover parameter validation, compile-time validation for literal inputs,\nand execution-time behavior for literal radius values.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "BooseDocumentation/BOOSEUnitTesting.CommandParserTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "BooseDocumentation/BOOSEUnitTesting.CommandParserTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEUnitTesting.CommandParserTests",
+      "Summary": "<p sourcefile=\"BooseDocumentation/BOOSEUnitTesting.CommandParserTests.yml\" sourcestartlinenumber=\"1\">Unit tests for <xref href=\"BOOSE_App.CommandParser\" data-throw-if-not-resolved=\"false\"></xref>.\nCovers parsing of single-line commands (including special-cased &quot;end if/while/for&quot;),\nvariable declarations (int/real), assignments, and loop/if structure validation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "BooseDocumentation/BOOSEUnitTesting.DrawToCommandTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "BooseDocumentation/BOOSEUnitTesting.DrawToCommandTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEUnitTesting.DrawToCommandTests",
+      "Summary": "<p sourcefile=\"BooseDocumentation/BOOSEUnitTesting.DrawToCommandTests.yml\" sourcestartlinenumber=\"1\">Contains unit tests for the <xref href=\"BOOSE_App.DrawToCommand\" data-throw-if-not-resolved=\"false\"></xref> class.\nTests cover parameter validation, compile-time validation for literal inputs,\nand execution-time behavior for literal and evaluated parameters.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "BooseDocumentation/BOOSEUnitTesting.MoveToCommandTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "BooseDocumentation/BOOSEUnitTesting.MoveToCommandTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEUnitTesting.MoveToCommandTests",
+      "Summary": "<p sourcefile=\"BooseDocumentation/BOOSEUnitTesting.MoveToCommandTests.yml\" sourcestartlinenumber=\"1\">Contains unit tests for the <xref href=\"BOOSE_App.MoveToCommand\" data-throw-if-not-resolved=\"false\"></xref> class.\nTests cover parameter validation, compile-time validation for literal inputs,\nand execution-time behavior for literal and evaluated parameters.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "BooseDocumentation/BOOSEUnitTesting.PenCommandTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "BooseDocumentation/BOOSEUnitTesting.PenCommandTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEUnitTesting.PenCommandTests",
+      "Summary": "<p sourcefile=\"BooseDocumentation/BOOSEUnitTesting.PenCommandTests.yml\" sourcestartlinenumber=\"1\">Contains unit tests for the <xref href=\"BOOSE_App.PenCommand\" data-throw-if-not-resolved=\"false\"></xref> class.\nTests cover parameter validation, compile-time validation for literal RGB values,\nand execution-time behavior including runtime range checking.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "BooseDocumentation/BOOSEUnitTesting.RectangleCommandTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "BooseDocumentation/BOOSEUnitTesting.RectangleCommandTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEUnitTesting.RectangleCommandTests",
+      "Summary": "<p sourcefile=\"BooseDocumentation/BOOSEUnitTesting.RectangleCommandTests.yml\" sourcestartlinenumber=\"1\">Contains unit tests for the <xref href=\"BOOSE_App.RectangleCommand\" data-throw-if-not-resolved=\"false\"></xref> class.\nTests cover parameter validation, compile-time validation for literal inputs,\nand execution-time behavior for literal and evaluated parameters.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "BooseDocumentation/BOOSEUnitTesting.TestBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "BooseDocumentation/BOOSEUnitTesting.TestBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEUnitTesting.TestBase",
+      "Summary": "<p sourcefile=\"BooseDocumentation/BOOSEUnitTesting.TestBase.yml\" sourcestartlinenumber=\"1\">Provides common setup for BOOSE command unit tests, including\na <xref href=\"BOOSE.StoredProgram\" data-throw-if-not-resolved=\"false\"></xref> created with a headless <xref href=\"BOOSE.ICanvas\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "BooseDocumentation/BOOSEUnitTesting.WriteCommandTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "BooseDocumentation/BOOSEUnitTesting.WriteCommandTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEUnitTesting.WriteCommandTests",
+      "Summary": "<p sourcefile=\"BooseDocumentation/BOOSEUnitTesting.WriteCommandTests.yml\" sourcestartlinenumber=\"1\">Contains unit tests for the <xref href=\"BOOSE_App.WriteCommand\" data-throw-if-not-resolved=\"false\"></xref> class.\nTests cover parameter validation and execution behavior for both\nevaluated text and literal (fallback) text.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "BooseDocumentation/BOOSEUnitTesting.yml",
+      "output": {
+        ".html": {
+          "relative_path": "BooseDocumentation/BOOSEUnitTesting.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEUnitTesting",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "BooseDocumentation/BOOSE_App.AppArray.yml",
+      "output": {
+        ".html": {
+          "relative_path": "BooseDocumentation/BOOSE_App.AppArray.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSE_App.AppArray",
+      "Summary": "<p sourcefile=\"BooseDocumentation/BOOSE_App.AppArray.yml\" sourcestartlinenumber=\"1\">Array command class which creates an array variable for <xref href=\"BOOSE.StoredProgram\" data-throw-if-not-resolved=\"false\"></xref>.\nThis class creates both integer and real arrays and bypasses BOOSE restrictions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "BooseDocumentation/BOOSE_App.AppCanvas.yml",
+      "output": {
+        ".html": {
+          "relative_path": "BooseDocumentation/BOOSE_App.AppCanvas.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSE_App.AppCanvas",
+      "Summary": "<p sourcefile=\"BooseDocumentation/BOOSE_App.AppCanvas.yml\" sourcestartlinenumber=\"1\">Class used for a drawable canvas via underlying bitmap.\nSupports basic drawing operations which are built upon\nin other classes.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "BooseDocumentation/BOOSE_App.AppCommandFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "BooseDocumentation/BOOSE_App.AppCommandFactory.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSE_App.AppCommandFactory",
+      "Summary": "<p sourcefile=\"BooseDocumentation/BOOSE_App.AppCommandFactory.yml\" sourcestartlinenumber=\"1\">Factory class responsible for creating command objects\nfor BOOSE application. Commands are linked to <xref href=\"BOOSE_App.AppCanvas\" data-throw-if-not-resolved=\"false\"></xref>\nallowing drawing operations to be used avoiding their inherited restrictions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "BooseDocumentation/BOOSE_App.AppElse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "BooseDocumentation/BOOSE_App.AppElse.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSE_App.AppElse",
+      "Summary": "<p sourcefile=\"BooseDocumentation/BOOSE_App.AppElse.yml\" sourcestartlinenumber=\"1\">Else command class which executes code if a false\nvalue is passed into the stack by the if command.\nBypasses BOOSE restrictions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "BooseDocumentation/BOOSE_App.AppEndFor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "BooseDocumentation/BOOSE_App.AppEndFor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSE_App.AppEndFor",
+      "Summary": "<p sourcefile=\"BooseDocumentation/BOOSE_App.AppEndFor.yml\" sourcestartlinenumber=\"1\">End for command class which marks the end of a for loop.\nDetermines whether loop should repeat or end, bypasses\nBOOSE restrictions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "BooseDocumentation/BOOSE_App.AppEndIf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "BooseDocumentation/BOOSE_App.AppEndIf.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSE_App.AppEndIf",
+      "Summary": "<p sourcefile=\"BooseDocumentation/BOOSE_App.AppEndIf.yml\" sourcestartlinenumber=\"1\">End if command class used to mark the end of an if block\nand updates runtimestack. Bypasses BOOSE restrictions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "BooseDocumentation/BOOSE_App.AppEndWhile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "BooseDocumentation/BOOSE_App.AppEndWhile.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSE_App.AppEndWhile",
+      "Summary": "<p sourcefile=\"BooseDocumentation/BOOSE_App.AppEndWhile.yml\" sourcestartlinenumber=\"1\">End command class which marks the end of a while loop.\nBypasses BOOSE restrictions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "BooseDocumentation/BOOSE_App.AppFor.ForRuntime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "BooseDocumentation/BOOSE_App.AppFor.ForRuntime.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSE_App.AppFor.ForRuntime",
+      "Summary": "<p sourcefile=\"BooseDocumentation/BOOSE_App.AppFor.ForRuntime.yml\" sourcestartlinenumber=\"1\">Maintains a stack of active for commands.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "BooseDocumentation/BOOSE_App.AppFor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "BooseDocumentation/BOOSE_App.AppFor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSE_App.AppFor",
+      "Summary": "<p sourcefile=\"BooseDocumentation/BOOSE_App.AppFor.yml\" sourcestartlinenumber=\"1\">For command class which executes a loop by iterating an\ninteger variable from a start value to an end value using an optional step.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "BooseDocumentation/BOOSE_App.AppIf.IfRuntime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "BooseDocumentation/BOOSE_App.AppIf.IfRuntime.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSE_App.AppIf.IfRuntime",
+      "Summary": "<p sourcefile=\"BooseDocumentation/BOOSE_App.AppIf.IfRuntime.yml\" sourcestartlinenumber=\"1\">Maintains a stack of active if commands.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "BooseDocumentation/BOOSE_App.AppIf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "BooseDocumentation/BOOSE_App.AppIf.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSE_App.AppIf",
+      "Summary": "<p sourcefile=\"BooseDocumentation/BOOSE_App.AppIf.yml\" sourcestartlinenumber=\"1\">If command class which evalutes two expressions to set a boolean condition.\nCommand execution is determined based on the boolean result. Bypasses BOOSE\nrestrictions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "BooseDocumentation/BOOSE_App.AppInt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "BooseDocumentation/BOOSE_App.AppInt.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSE_App.AppInt",
+      "Summary": "<p sourcefile=\"BooseDocumentation/BOOSE_App.AppInt.yml\" sourcestartlinenumber=\"1\">Command class for handling integer variable assignments.\nReplaces BOOSE.Int functionality for runtime expression evaluation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "BooseDocumentation/BOOSE_App.AppPeek.yml",
+      "output": {
+        ".html": {
+          "relative_path": "BooseDocumentation/BOOSE_App.AppPeek.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSE_App.AppPeek",
+      "Summary": "<p sourcefile=\"BooseDocumentation/BOOSE_App.AppPeek.yml\" sourcestartlinenumber=\"1\">Peek command class which reads a value from an array and\nassigns it to an existing variable. Bypasses\nBOOSE restrictions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "BooseDocumentation/BOOSE_App.AppPoke.yml",
+      "output": {
+        ".html": {
+          "relative_path": "BooseDocumentation/BOOSE_App.AppPoke.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSE_App.AppPoke",
+      "Summary": "<p sourcefile=\"BooseDocumentation/BOOSE_App.AppPoke.yml\" sourcestartlinenumber=\"1\">Poke command which writes a value into an array element.\nBypasses BOOSE restrictions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "BooseDocumentation/BOOSE_App.AppReal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "BooseDocumentation/BOOSE_App.AppReal.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSE_App.AppReal",
+      "Summary": "<p sourcefile=\"BooseDocumentation/BOOSE_App.AppReal.yml\" sourcestartlinenumber=\"1\">Command class for handling real (double) variable assignments.\nReplaces BOOSE.Real functionality for runtime expression evaluation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "BooseDocumentation/BOOSE_App.AppWhile.WhileRuntime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "BooseDocumentation/BOOSE_App.AppWhile.WhileRuntime.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSE_App.AppWhile.WhileRuntime",
+      "Summary": "<p sourcefile=\"BooseDocumentation/BOOSE_App.AppWhile.WhileRuntime.yml\" sourcestartlinenumber=\"1\">Maintains a stack of active while commands.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "BooseDocumentation/BOOSE_App.AppWhile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "BooseDocumentation/BOOSE_App.AppWhile.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSE_App.AppWhile",
+      "Summary": "<p sourcefile=\"BooseDocumentation/BOOSE_App.AppWhile.yml\" sourcestartlinenumber=\"1\">While command class which evaluates two expressions to set a boolean condition.\nCommand execution is repeatedly performed while the condition remains true.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "BooseDocumentation/BOOSE_App.CircleCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "BooseDocumentation/BOOSE_App.CircleCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSE_App.CircleCommand",
+      "Summary": "<p sourcefile=\"BooseDocumentation/BOOSE_App.CircleCommand.yml\" sourcestartlinenumber=\"1\">Command class for drawing circles onto canvas at\ncurrent pen position. Bypasses BOOSE restrictions.\nUses <xref href=\"BOOSE.ICommand\" data-throw-if-not-resolved=\"false\"></xref> interface.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "BooseDocumentation/BOOSE_App.CommandParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "BooseDocumentation/BOOSE_App.CommandParser.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSE_App.CommandParser",
+      "Summary": "<p sourcefile=\"BooseDocumentation/BOOSE_App.CommandParser.yml\" sourcestartlinenumber=\"1\">Parses user input into valid BOOSE commands.\nWorks with command factory to create command objects\nand stores them in <xref href=\"BOOSE.StoredProgram\" data-throw-if-not-resolved=\"false\"></xref> for\nexecution.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "BooseDocumentation/BOOSE_App.DrawToCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "BooseDocumentation/BOOSE_App.DrawToCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSE_App.DrawToCommand",
+      "Summary": "<p sourcefile=\"BooseDocumentation/BOOSE_App.DrawToCommand.yml\" sourcestartlinenumber=\"1\">Command class for drawing a line on canvas\nfrom current pen position.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "BooseDocumentation/BOOSE_App.Form1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "BooseDocumentation/BOOSE_App.Form1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSE_App.Form1",
+      "Summary": "<p sourcefile=\"BooseDocumentation/BOOSE_App.Form1.yml\" sourcestartlinenumber=\"1\"><xref href=\"BOOSE_App.Form1\" data-throw-if-not-resolved=\"false\"></xref> operates as the main class for the application.\nIt provides a windows form GUI to store and execute user commands,\nwhich interact with the drawable canvas.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "BooseDocumentation/BOOSE_App.MoveToCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "BooseDocumentation/BOOSE_App.MoveToCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSE_App.MoveToCommand",
+      "Summary": "<p sourcefile=\"BooseDocumentation/BOOSE_App.MoveToCommand.yml\" sourcestartlinenumber=\"1\">Command class for moving pen on canvas without drawing.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "BooseDocumentation/BOOSE_App.PenCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "BooseDocumentation/BOOSE_App.PenCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSE_App.PenCommand",
+      "Summary": "<p sourcefile=\"BooseDocumentation/BOOSE_App.PenCommand.yml\" sourcestartlinenumber=\"1\">Command class used for setting the pen colour used\nfor drawing on canvas.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "BooseDocumentation/BOOSE_App.RectangleCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "BooseDocumentation/BOOSE_App.RectangleCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSE_App.RectangleCommand",
+      "Summary": "<p sourcefile=\"BooseDocumentation/BOOSE_App.RectangleCommand.yml\" sourcestartlinenumber=\"1\">Command class for drawing rectangles onto canvas\nat current pen position. Bypasses BOOSE restrictions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "BooseDocumentation/BOOSE_App.WriteCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "BooseDocumentation/BOOSE_App.WriteCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSE_App.WriteCommand",
+      "Summary": "<p sourcefile=\"BooseDocumentation/BOOSE_App.WriteCommand.yml\" sourcestartlinenumber=\"1\">Command class for drawing text onto canvas at current pen position.\nUses <xref href=\"BOOSE.ICommand\" data-throw-if-not-resolved=\"false\"></xref> interface.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "BooseDocumentation/BOOSE_App.yml",
+      "output": {
+        ".html": {
+          "relative_path": "BooseDocumentation/BOOSE_App.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSE_App",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "BooseDocumentation/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "BooseDocumentation/toc.html"
+        },
+        ".json": {
+          "relative_path": "BooseDocumentation/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "index.html",
+      "output": {
+        "resource": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

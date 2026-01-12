@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class AppCanvasTests | mysite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class AppCanvasTests | mysite ">
+      
+      <meta name="description" content="Contains comprehensive unit tests for .">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/new/main/apiSpec/new?filename=BOOSEUnitTesting_AppCanvasTests.md&amp;value=---%0Auid%3A%20BOOSEUnitTesting.AppCanvasTests%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="mysite">
+            mysite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="BOOSEUnitTesting.AppCanvasTests">
+
+
+
+  <h1 id="BOOSEUnitTesting_AppCanvasTests" data-uid="BOOSEUnitTesting.AppCanvasTests" class="text-break">
+Class AppCanvasTests  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/AppCanvasTests.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="BOOSEUnitTesting.html">BOOSEUnitTesting</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BOOSEUnitTesting.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Contains comprehensive unit tests for <a class="xref" href="BOOSE_App.AppCanvas.html">AppCanvas</a>.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestClass]
+public class AppCanvasTests</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">AppCanvasTests</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="BOOSEUnitTesting_AppCanvasTests_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Some methods and property setters in <a class="xref" href="BOOSE_App.AppCanvas.html">AppCanvas</a> catch <span class="xref">BOOSE.CanvasException</span>
+and display a modal MessageBox (instead of rethrowing). These tests include invalid-input cases
+that will display MessageBoxes; close them manually during the run as desired.</p>
+</div>
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="BOOSEUnitTesting_AppCanvasTests_Circle_DrawsOnBitmap_" data-uid="BOOSEUnitTesting.AppCanvasTests.Circle_DrawsOnBitmap*"></a>
+
+  <h3 id="BOOSEUnitTesting_AppCanvasTests_Circle_DrawsOnBitmap" data-uid="BOOSEUnitTesting.AppCanvasTests.Circle_DrawsOnBitmap">
+  Circle_DrawsOnBitmap()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/AppCanvasTests.cs/#L368"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that <a class="xref" href="BOOSE_App.AppCanvas.html#BOOSE_App_AppCanvas_Circle_System_Int32_System_Boolean_">Circle(int, bool)</a> draws non-white pixels on the bitmap.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Circle_DrawsOnBitmap()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEUnitTesting_AppCanvasTests_Clear_ResetsBitmapToWhite_" data-uid="BOOSEUnitTesting.AppCanvasTests.Clear_ResetsBitmapToWhite*"></a>
+
+  <h3 id="BOOSEUnitTesting_AppCanvasTests_Clear_ResetsBitmapToWhite" data-uid="BOOSEUnitTesting.AppCanvasTests.Clear_ResetsBitmapToWhite">
+  Clear_ResetsBitmapToWhite()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/AppCanvasTests.cs/#L348"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that <a class="xref" href="BOOSE_App.AppCanvas.html#BOOSE_App_AppCanvas_Clear">Clear()</a> makes the bitmap white everywhere (sampled).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Clear_ResetsBitmapToWhite()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEUnitTesting_AppCanvasTests_Constructor_SetsDimensions_AndCreatesBitmap_" data-uid="BOOSEUnitTesting.AppCanvasTests.Constructor_SetsDimensions_AndCreatesBitmap*"></a>
+
+  <h3 id="BOOSEUnitTesting_AppCanvasTests_Constructor_SetsDimensions_AndCreatesBitmap" data-uid="BOOSEUnitTesting.AppCanvasTests.Constructor_SetsDimensions_AndCreatesBitmap">
+  Constructor_SetsDimensions_AndCreatesBitmap()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/AppCanvasTests.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies the constructor sets width/height and produces a bitmap with matching dimensions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Constructor_SetsDimensions_AndCreatesBitmap()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEUnitTesting_AppCanvasTests_DrawTo_WhenNegativeX_DoesNotUpdatePosition_" data-uid="BOOSEUnitTesting.AppCanvasTests.DrawTo_WhenNegativeX_DoesNotUpdatePosition*"></a>
+
+  <h3 id="BOOSEUnitTesting_AppCanvasTests_DrawTo_WhenNegativeX_DoesNotUpdatePosition" data-uid="BOOSEUnitTesting.AppCanvasTests.DrawTo_WhenNegativeX_DoesNotUpdatePosition">
+  DrawTo_WhenNegativeX_DoesNotUpdatePosition()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/AppCanvasTests.cs/#L251"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that <a class="xref" href="BOOSE_App.AppCanvas.html#BOOSE_App_AppCanvas_DrawTo_System_Int32_System_Int32_">DrawTo(int, int)</a> rejects negative X (shows MessageBox) and does not update position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void DrawTo_WhenNegativeX_DoesNotUpdatePosition()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEUnitTesting_AppCanvasTests_DrawTo_WhenNegativeY_DoesNotUpdatePosition_" data-uid="BOOSEUnitTesting.AppCanvasTests.DrawTo_WhenNegativeY_DoesNotUpdatePosition*"></a>
+
+  <h3 id="BOOSEUnitTesting_AppCanvasTests_DrawTo_WhenNegativeY_DoesNotUpdatePosition" data-uid="BOOSEUnitTesting.AppCanvasTests.DrawTo_WhenNegativeY_DoesNotUpdatePosition">
+  DrawTo_WhenNegativeY_DoesNotUpdatePosition()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/AppCanvasTests.cs/#L283"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that <a class="xref" href="BOOSE_App.AppCanvas.html#BOOSE_App_AppCanvas_DrawTo_System_Int32_System_Int32_">DrawTo(int, int)</a> rejects negative Y (shows MessageBox) and does not update position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void DrawTo_WhenNegativeY_DoesNotUpdatePosition()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEUnitTesting_AppCanvasTests_DrawTo_WhenValid_DrawsAndUpdatesPosition_" data-uid="BOOSEUnitTesting.AppCanvasTests.DrawTo_WhenValid_DrawsAndUpdatesPosition*"></a>
+
+  <h3 id="BOOSEUnitTesting_AppCanvasTests_DrawTo_WhenValid_DrawsAndUpdatesPosition" data-uid="BOOSEUnitTesting.AppCanvasTests.DrawTo_WhenValid_DrawsAndUpdatesPosition">
+  DrawTo_WhenValid_DrawsAndUpdatesPosition()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/AppCanvasTests.cs/#L232"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that <a class="xref" href="BOOSE_App.AppCanvas.html#BOOSE_App_AppCanvas_DrawTo_System_Int32_System_Int32_">DrawTo(int, int)</a> draws a line and updates pen position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void DrawTo_WhenValid_DrawsAndUpdatesPosition()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEUnitTesting_AppCanvasTests_DrawTo_WhenXGreaterThanWidth_DoesNotUpdatePosition_" data-uid="BOOSEUnitTesting.AppCanvasTests.DrawTo_WhenXGreaterThanWidth_DoesNotUpdatePosition*"></a>
+
+  <h3 id="BOOSEUnitTesting_AppCanvasTests_DrawTo_WhenXGreaterThanWidth_DoesNotUpdatePosition" data-uid="BOOSEUnitTesting.AppCanvasTests.DrawTo_WhenXGreaterThanWidth_DoesNotUpdatePosition">
+  DrawTo_WhenXGreaterThanWidth_DoesNotUpdatePosition()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/AppCanvasTests.cs/#L267"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that <a class="xref" href="BOOSE_App.AppCanvas.html#BOOSE_App_AppCanvas_DrawTo_System_Int32_System_Int32_">DrawTo(int, int)</a> rejects X &gt; width (shows MessageBox) and does not update position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void DrawTo_WhenXGreaterThanWidth_DoesNotUpdatePosition()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEUnitTesting_AppCanvasTests_DrawTo_WhenYGreaterThanHeight_DoesNotUpdatePosition_" data-uid="BOOSEUnitTesting.AppCanvasTests.DrawTo_WhenYGreaterThanHeight_DoesNotUpdatePosition*"></a>
+
+  <h3 id="BOOSEUnitTesting_AppCanvasTests_DrawTo_WhenYGreaterThanHeight_DoesNotUpdatePosition" data-uid="BOOSEUnitTesting.AppCanvasTests.DrawTo_WhenYGreaterThanHeight_DoesNotUpdatePosition">
+  DrawTo_WhenYGreaterThanHeight_DoesNotUpdatePosition()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/AppCanvasTests.cs/#L299"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that <a class="xref" href="BOOSE_App.AppCanvas.html#BOOSE_App_AppCanvas_DrawTo_System_Int32_System_Int32_">DrawTo(int, int)</a> rejects Y &gt; height (shows MessageBox) and does not update position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void DrawTo_WhenYGreaterThanHeight_DoesNotUpdatePosition()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEUnitTesting_AppCanvasTests_Draw_Method_ThrowsNotImplementedException_" data-uid="BOOSEUnitTesting.AppCanvasTests.Draw_Method_ThrowsNotImplementedException*"></a>
+
+  <h3 id="BOOSEUnitTesting_AppCanvasTests_Draw_Method_ThrowsNotImplementedException" data-uid="BOOSEUnitTesting.AppCanvasTests.Draw_Method_ThrowsNotImplementedException">
+  Draw_Method_ThrowsNotImplementedException()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/AppCanvasTests.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that <a class="xref" href="BOOSE_App.AppCanvas.html#BOOSE_App_AppCanvas_draw_System_Drawing_Graphics_">draw(Graphics)</a> throws <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notimplementedexception">NotImplementedException</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Draw_Method_ThrowsNotImplementedException()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEUnitTesting_AppCanvasTests_MoveTo_WhenNegativeX_DoesNotUpdatePosition_" data-uid="BOOSEUnitTesting.AppCanvasTests.MoveTo_WhenNegativeX_DoesNotUpdatePosition*"></a>
+
+  <h3 id="BOOSEUnitTesting_AppCanvasTests_MoveTo_WhenNegativeX_DoesNotUpdatePosition" data-uid="BOOSEUnitTesting.AppCanvasTests.MoveTo_WhenNegativeX_DoesNotUpdatePosition">
+  MoveTo_WhenNegativeX_DoesNotUpdatePosition()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/AppCanvasTests.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that <a class="xref" href="BOOSE_App.AppCanvas.html#BOOSE_App_AppCanvas_MoveTo_System_Int32_System_Int32_">MoveTo(int, int)</a> rejects negative X (shows MessageBox) and does not update position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void MoveTo_WhenNegativeX_DoesNotUpdatePosition()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEUnitTesting_AppCanvasTests_MoveTo_WhenNegativeY_DoesNotUpdatePosition_" data-uid="BOOSEUnitTesting.AppCanvasTests.MoveTo_WhenNegativeY_DoesNotUpdatePosition*"></a>
+
+  <h3 id="BOOSEUnitTesting_AppCanvasTests_MoveTo_WhenNegativeY_DoesNotUpdatePosition" data-uid="BOOSEUnitTesting.AppCanvasTests.MoveTo_WhenNegativeY_DoesNotUpdatePosition">
+  MoveTo_WhenNegativeY_DoesNotUpdatePosition()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/AppCanvasTests.cs/#L184"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that <a class="xref" href="BOOSE_App.AppCanvas.html#BOOSE_App_AppCanvas_MoveTo_System_Int32_System_Int32_">MoveTo(int, int)</a> rejects negative Y (shows MessageBox) and does not update position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void MoveTo_WhenNegativeY_DoesNotUpdatePosition()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEUnitTesting_AppCanvasTests_MoveTo_WhenValid_UpdatesPosition_" data-uid="BOOSEUnitTesting.AppCanvasTests.MoveTo_WhenValid_UpdatesPosition*"></a>
+
+  <h3 id="BOOSEUnitTesting_AppCanvasTests_MoveTo_WhenValid_UpdatesPosition" data-uid="BOOSEUnitTesting.AppCanvasTests.MoveTo_WhenValid_UpdatesPosition">
+  MoveTo_WhenValid_UpdatesPosition()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/AppCanvasTests.cs/#L154"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that <a class="xref" href="BOOSE_App.AppCanvas.html#BOOSE_App_AppCanvas_MoveTo_System_Int32_System_Int32_">MoveTo(int, int)</a> updates pen position for valid coordinates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void MoveTo_WhenValid_UpdatesPosition()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEUnitTesting_AppCanvasTests_MoveTo_WhenXGreaterThanWidth_DoesNotUpdatePosition_" data-uid="BOOSEUnitTesting.AppCanvasTests.MoveTo_WhenXGreaterThanWidth_DoesNotUpdatePosition*"></a>
+
+  <h3 id="BOOSEUnitTesting_AppCanvasTests_MoveTo_WhenXGreaterThanWidth_DoesNotUpdatePosition" data-uid="BOOSEUnitTesting.AppCanvasTests.MoveTo_WhenXGreaterThanWidth_DoesNotUpdatePosition">
+  MoveTo_WhenXGreaterThanWidth_DoesNotUpdatePosition()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/AppCanvasTests.cs/#L200"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that <a class="xref" href="BOOSE_App.AppCanvas.html#BOOSE_App_AppCanvas_MoveTo_System_Int32_System_Int32_">MoveTo(int, int)</a> rejects X &gt; width (shows MessageBox) and does not update position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void MoveTo_WhenXGreaterThanWidth_DoesNotUpdatePosition()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEUnitTesting_AppCanvasTests_MoveTo_WhenYGreaterThanHeight_DoesNotUpdatePosition_" data-uid="BOOSEUnitTesting.AppCanvasTests.MoveTo_WhenYGreaterThanHeight_DoesNotUpdatePosition*"></a>
+
+  <h3 id="BOOSEUnitTesting_AppCanvasTests_MoveTo_WhenYGreaterThanHeight_DoesNotUpdatePosition" data-uid="BOOSEUnitTesting.AppCanvasTests.MoveTo_WhenYGreaterThanHeight_DoesNotUpdatePosition">
+  MoveTo_WhenYGreaterThanHeight_DoesNotUpdatePosition()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/AppCanvasTests.cs/#L216"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that <a class="xref" href="BOOSE_App.AppCanvas.html#BOOSE_App_AppCanvas_MoveTo_System_Int32_System_Int32_">MoveTo(int, int)</a> rejects Y &gt; height (shows MessageBox) and does not update position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void MoveTo_WhenYGreaterThanHeight_DoesNotUpdatePosition()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEUnitTesting_AppCanvasTests_Rect_DrawsOnBitmap_" data-uid="BOOSEUnitTesting.AppCanvasTests.Rect_DrawsOnBitmap*"></a>
+
+  <h3 id="BOOSEUnitTesting_AppCanvasTests_Rect_DrawsOnBitmap" data-uid="BOOSEUnitTesting.AppCanvasTests.Rect_DrawsOnBitmap">
+  Rect_DrawsOnBitmap()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/AppCanvasTests.cs/#L385"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that <a class="xref" href="BOOSE_App.AppCanvas.html#BOOSE_App_AppCanvas_Rect_System_Int32_System_Int32_System_Boolean_">Rect(int, int, bool)</a> draws non-white pixels on the bitmap.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Rect_DrawsOnBitmap()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEUnitTesting_AppCanvasTests_SetColour_WhenComponentOver255_ThrowsCanvasException_" data-uid="BOOSEUnitTesting.AppCanvasTests.SetColour_WhenComponentOver255_ThrowsCanvasException*"></a>
+
+  <h3 id="BOOSEUnitTesting_AppCanvasTests_SetColour_WhenComponentOver255_ThrowsCanvasException" data-uid="BOOSEUnitTesting.AppCanvasTests.SetColour_WhenComponentOver255_ThrowsCanvasException">
+  SetColour_WhenComponentOver255_ThrowsCanvasException()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/AppCanvasTests.cs/#L335"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that <a class="xref" href="BOOSE_App.AppCanvas.html#BOOSE_App_AppCanvas_SetColour_System_Int32_System_Int32_System_Int32_">SetColour(int, int, int)</a> throws when any component is greater than 255.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void SetColour_WhenComponentOver255_ThrowsCanvasException()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEUnitTesting_AppCanvasTests_SetColour_WhenValid_UpdatesPenColour_AndAffectsDrawing_" data-uid="BOOSEUnitTesting.AppCanvasTests.SetColour_WhenValid_UpdatesPenColour_AndAffectsDrawing*"></a>
+
+  <h3 id="BOOSEUnitTesting_AppCanvasTests_SetColour_WhenValid_UpdatesPenColour_AndAffectsDrawing" data-uid="BOOSEUnitTesting.AppCanvasTests.SetColour_WhenValid_UpdatesPenColour_AndAffectsDrawing">
+  SetColour_WhenValid_UpdatesPenColour_AndAffectsDrawing()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/AppCanvasTests.cs/#L316"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that <a class="xref" href="BOOSE_App.AppCanvas.html#BOOSE_App_AppCanvas_SetColour_System_Int32_System_Int32_System_Int32_">SetColour(int, int, int)</a> sets <a class="xref" href="BOOSE_App.AppCanvas.html#BOOSE_App_AppCanvas_PenColour">PenColour</a>
+and that subsequent drawing uses that colour.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void SetColour_WhenValid_UpdatesPenColour_AndAffectsDrawing()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEUnitTesting_AppCanvasTests_Set_DoesNotThrow_AndBitmapStillDrawable_" data-uid="BOOSEUnitTesting.AppCanvasTests.Set_DoesNotThrow_AndBitmapStillDrawable*"></a>
+
+  <h3 id="BOOSEUnitTesting_AppCanvasTests_Set_DoesNotThrow_AndBitmapStillDrawable" data-uid="BOOSEUnitTesting.AppCanvasTests.Set_DoesNotThrow_AndBitmapStillDrawable">
+  Set_DoesNotThrow_AndBitmapStillDrawable()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/AppCanvasTests.cs/#L438"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that <a class="xref" href="BOOSE_App.AppCanvas.html#BOOSE_App_AppCanvas_Set_System_Int32_System_Int32_">Set(int, int)</a> does not throw and the bitmap remains usable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Set_DoesNotThrow_AndBitmapStillDrawable()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEUnitTesting_AppCanvasTests_Tri_DrawsOnBitmap_" data-uid="BOOSEUnitTesting.AppCanvasTests.Tri_DrawsOnBitmap*"></a>
+
+  <h3 id="BOOSEUnitTesting_AppCanvasTests_Tri_DrawsOnBitmap" data-uid="BOOSEUnitTesting.AppCanvasTests.Tri_DrawsOnBitmap">
+  Tri_DrawsOnBitmap()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/AppCanvasTests.cs/#L402"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that <a class="xref" href="BOOSE_App.AppCanvas.html#BOOSE_App_AppCanvas_Tri_System_Int32_System_Int32_">Tri(int, int)</a> draws non-white pixels on the bitmap.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Tri_DrawsOnBitmap()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEUnitTesting_AppCanvasTests_WriteText_DrawsOnBitmap_" data-uid="BOOSEUnitTesting.AppCanvasTests.WriteText_DrawsOnBitmap*"></a>
+
+  <h3 id="BOOSEUnitTesting_AppCanvasTests_WriteText_DrawsOnBitmap" data-uid="BOOSEUnitTesting.AppCanvasTests.WriteText_DrawsOnBitmap">
+  WriteText_DrawsOnBitmap()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/AppCanvasTests.cs/#L420"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that <a class="xref" href="BOOSE_App.AppCanvas.html#BOOSE_App_AppCanvas_WriteText_System_String_">WriteText(string)</a> changes the bitmap (non-white samples appear).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void WriteText_DrawsOnBitmap()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEUnitTesting_AppCanvasTests_XposYpos_WhenInBounds_SetsValues_" data-uid="BOOSEUnitTesting.AppCanvasTests.XposYpos_WhenInBounds_SetsValues*"></a>
+
+  <h3 id="BOOSEUnitTesting_AppCanvasTests_XposYpos_WhenInBounds_SetsValues" data-uid="BOOSEUnitTesting.AppCanvasTests.XposYpos_WhenInBounds_SetsValues">
+  XposYpos_WhenInBounds_SetsValues()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/AppCanvasTests.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that setting <a class="xref" href="BOOSE_App.AppCanvas.html#BOOSE_App_AppCanvas_Xpos">Xpos</a> and <a class="xref" href="BOOSE_App.AppCanvas.html#BOOSE_App_AppCanvas_Ypos">Ypos</a> within bounds works.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void XposYpos_WhenInBounds_SetsValues()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEUnitTesting_AppCanvasTests_Xpos_WhenGreaterThanWidth_DoesNotChangeValue_" data-uid="BOOSEUnitTesting.AppCanvasTests.Xpos_WhenGreaterThanWidth_DoesNotChangeValue*"></a>
+
+  <h3 id="BOOSEUnitTesting_AppCanvasTests_Xpos_WhenGreaterThanWidth_DoesNotChangeValue" data-uid="BOOSEUnitTesting.AppCanvasTests.Xpos_WhenGreaterThanWidth_DoesNotChangeValue">
+  Xpos_WhenGreaterThanWidth_DoesNotChangeValue()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/AppCanvasTests.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that setting <a class="xref" href="BOOSE_App.AppCanvas.html#BOOSE_App_AppCanvas_Xpos">Xpos</a> greater than width is rejected (shows MessageBox)
+and does not change the stored position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Xpos_WhenGreaterThanWidth_DoesNotChangeValue()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEUnitTesting_AppCanvasTests_Xpos_WhenNegative_DoesNotChangeValue_" data-uid="BOOSEUnitTesting.AppCanvasTests.Xpos_WhenNegative_DoesNotChangeValue*"></a>
+
+  <h3 id="BOOSEUnitTesting_AppCanvasTests_Xpos_WhenNegative_DoesNotChangeValue" data-uid="BOOSEUnitTesting.AppCanvasTests.Xpos_WhenNegative_DoesNotChangeValue">
+  Xpos_WhenNegative_DoesNotChangeValue()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/AppCanvasTests.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that setting <a class="xref" href="BOOSE_App.AppCanvas.html#BOOSE_App_AppCanvas_Xpos">Xpos</a> to a negative value is rejected (shows MessageBox)
+and does not change the stored position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Xpos_WhenNegative_DoesNotChangeValue()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEUnitTesting_AppCanvasTests_Ypos_WhenGreaterThanHeight_DoesNotChangeValue_" data-uid="BOOSEUnitTesting.AppCanvasTests.Ypos_WhenGreaterThanHeight_DoesNotChangeValue*"></a>
+
+  <h3 id="BOOSEUnitTesting_AppCanvasTests_Ypos_WhenGreaterThanHeight_DoesNotChangeValue" data-uid="BOOSEUnitTesting.AppCanvasTests.Ypos_WhenGreaterThanHeight_DoesNotChangeValue">
+  Ypos_WhenGreaterThanHeight_DoesNotChangeValue()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/AppCanvasTests.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that setting <a class="xref" href="BOOSE_App.AppCanvas.html#BOOSE_App_AppCanvas_Ypos">Ypos</a> greater than height is rejected (shows MessageBox)
+and does not change the stored position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Ypos_WhenGreaterThanHeight_DoesNotChangeValue()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEUnitTesting_AppCanvasTests_Ypos_WhenNegative_DoesNotChangeValue_" data-uid="BOOSEUnitTesting.AppCanvasTests.Ypos_WhenNegative_DoesNotChangeValue*"></a>
+
+  <h3 id="BOOSEUnitTesting_AppCanvasTests_Ypos_WhenNegative_DoesNotChangeValue" data-uid="BOOSEUnitTesting.AppCanvasTests.Ypos_WhenNegative_DoesNotChangeValue">
+  Ypos_WhenNegative_DoesNotChangeValue()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/AppCanvasTests.cs/#L123"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that setting <a class="xref" href="BOOSE_App.AppCanvas.html#BOOSE_App_AppCanvas_Ypos">Ypos</a> to a negative value is rejected (shows MessageBox)
+and does not change the stored position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Ypos_WhenNegative_DoesNotChangeValue()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ASE2025repos/ase-boose-assignment-peppered66/blob/main/BOOSEUnitTesting/AppCanvasTests.cs/#L17" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
